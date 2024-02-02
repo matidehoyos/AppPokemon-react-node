@@ -40,16 +40,7 @@ const handleSort = (event) => {
                         <option  value="DB">From dataBase</option>
                     </select>
                 </div>
-                <div>
-                    <label>Type:</label>
-                    <select onChange={handleFilterTypes} >
-                        <option key="all" value="all">All types</option>
-                    { types.map((type) => (
-                        <option key={type.id} value={type.name}>{type.name}</option>
-                    ))
-                    }
-                    </select>
-                </div>
+        
                 <div>
                     <label>Order by:</label>
                     <select onChange={handleOrderBy} >

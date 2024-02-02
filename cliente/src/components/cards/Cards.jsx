@@ -1,20 +1,23 @@
 import style from "./Cards.module.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Card from "../card/Card";
 import Filters from "../filters/Filters";
 import SearchedCard from "../searchedCard/SearchedCard";
 import { useState } from "react";
+import { setFilterType } from "../../redux/actions";
 
 
 export default function Cards () {
 
     const pokemons = useSelector(state => state.pokemons);
+    const types = useSelector(state => state.types);
     const searchedPokemon = useSelector(state => state.searchedPokemon);
     const filterOrigin = useSelector(state => state.filterOrigin);
     const filterType = useSelector(state => state.filterType);
     const orderBy = useSelector(state => state.orderBy);
     const sort = useSelector(state => state.sort);
     const [currentPage, setCurrentPage] = useState(1);
+    const dispatch = useDispatch();
 
 
     const filteredPokes = pokemons.filter((pokemon) => {
@@ -43,6 +46,10 @@ export default function Cards () {
     const paginate = (pageNumber) => {
       setCurrentPage(pageNumber);
     };
+
+    const handleType = (e) => {
+      dispatch(setFilterType(e.target.value))
+    }
     
     return(
 
@@ -55,19 +62,35 @@ export default function Cards () {
            <img src="./pikaWalk.gif"></img>
         </div>
         <div className={style.cardsContainer}>
-          { currentPokemons
-            .sort((a, b) => {
-                if (orderBy === 'name') {
-                  return a.name.localeCompare(b.name) * (sort === 'asc' ? 1 : -1);
-                } else if (orderBy === 'attack') {
-                  return (a.attack - b.attack) * (sort === 'asc' ? 1 : -1);
-                }
-              })
-            .map((pokemon,index) => (
-                    <div key={index}>
-                        <Card pokemon={pokemon}/>
-                    </div>
-                ))}
+          <div className={style.types}>
+            <button value="all" onClick={handleType}>All types</button>
+            {types.map(type => (
+              <li key={type.id} value={type.name}><button value={type.name} onClick={handleType}>{type.name}</button></li>
+            ))}
+          </div>
+            <div className={style.cards}>
+            { currentPokemons
+              .sort((a, b) => {
+                  if (orderBy === 'name') {
+                    return a.name.localeCompare(b.name) * (sort === 'asc' ? 1 : -1);
+                  } else if (orderBy === 'attack') {
+                    return (a.attack - b.attack) * (sort === 'asc' ? 1 : -1);
+                  }
+                })
+              .map((pokemon,index) => (
+                      <div key={index}>
+                          <Card pokemon={pokemon}/>
+                      </div>
+                  ))}
+            {
+              currentPokemons.length === 0 && (
+                <div className={style.notFound}>
+                  <h3>Aún no hay pokemon´s de ese tipo</h3>
+                  <img src="./sad.png" />
+                </div>
+              )
+            }
+          </div>
         </div>
 
 
