@@ -17,7 +17,7 @@
 
 .pikaWalking {
     width: 100%;
-    height: 600px;
+    height: 120px;
     background-color: #222;
     animation: walking 2s ease-in-out 0s forwards;
     animation: left 0s ease-in-out 2s forwards;
@@ -28,8 +28,8 @@
 }
 
 .pikaWalking img {
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
 }
 
    
