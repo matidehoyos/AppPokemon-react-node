@@ -29,13 +29,15 @@ export default function Detail() {
         <div className={style.container}>
             <NavBar />
          <h2>Pokemon's details</h2>
+
+         <div className={style.cardDetail}>
+            <div className={style.image}>
+                <h2 className={style.namePoke}>{pokemon.name?.toUpperCase()}</h2> 
+                <img src={pokemon.image}/>
+            </div>
          <div className={style.card}>
             <div className={style.close}>
                 <button onClick={closeDetail}>X</button>
-            </div>
-            <h2>{pokemon.name?.toUpperCase()}</h2>
-            <div className={style.image}>
-            <img src={pokemon.image}/>
             </div>
             <h4>HP: <span className={style.value}>{pokemon.hp}</span></h4>
             <h4>Attack: <span className={style.value}>{pokemon.attack}</span></h4>
@@ -44,9 +46,8 @@ export default function Detail() {
             <h4>Height: <span className={style.value}>{pokemon.height}</span></h4>
             <h4>Weight: <span className={style.value}>{pokemon.weight}</span></h4>
             <h3>{pokemon.types?.join(" - ").toUpperCase()}</h3>
-
         </div>  
-
+        </div>
      </div>
     )
 }

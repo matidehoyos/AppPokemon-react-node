@@ -58,9 +58,6 @@ export default function Cards () {
          { searchedPokemon && (
           <SearchedCard pokemon={searchedPokemon}/>
           )}
-        <div className={style.pikaWalking}>
-           <img src="./pikaWalk.gif"></img>
-        </div>
         <div className={style.cardsContainer}>
           <div className={style.types}>
             <button value="all" onClick={handleType}>All types</button>

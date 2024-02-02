@@ -17,12 +17,14 @@
 }
 
 .logo1 {
-    width: 120px;
-    height: 60px;
-    background-image: url("./logo-pokeapi.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 15px;
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+}
+
+.logo1 img {
+    width: 50%;
+    height: auto;
 }
 
 .menu { 
@@ -62,12 +64,14 @@
 
 .logo2 {
     width: 60px;
-    height: 60px;
-    background-image: url("./icono.png");
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    margin-top: 10px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.logo2 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .secondRow {

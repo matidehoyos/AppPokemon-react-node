@@ -42,12 +42,9 @@
     }
 
 .logoPoke {
-    width: 300px;
-    height: 120px;
+    width: auto;
+    height: auto;
     margin: 0px auto;
-    background-image: url("./logo-pokeapi.png");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .txtContainer h2 {

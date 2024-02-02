@@ -9,7 +9,9 @@ export default function Landing() {
                     <img src="./landing.jpeg"  />
                 </div>
                 <div className={style.txtContainer}>
-                <div className={style.logoPoke}></div>
+                <div className={style.logoPoke}>
+                    <img src="./logo-pokeapi.png" alt="" />
+                </div>
                 <h2>WELCOME TO THE POKEMON-APP</h2>
                 <h3>Discover the features of your favourite pokemons</h3>
                 <Link to="/home">

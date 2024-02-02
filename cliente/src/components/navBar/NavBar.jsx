@@ -8,7 +8,9 @@ export default function NavBar() {
         <div className={style.container}>
             <div className={style.firstRow}>
                     <Link to="/">
-                         <div className={style.logo1}></div>
+                         <div className={style.logo1}>
+                            <img src="./logo-pokeapi.png" />
+                         </div>
                     </Link>
                     <div className={style.menu}>
                         <ul>
@@ -21,6 +23,7 @@ export default function NavBar() {
                         </ul>
                     </div>
                     <div className={style.logo2}>
+                            <img src="./icono.png" />
                     </div>
             </div>            
         </div>
