@@ -1,0 +1,88 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #111;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    animation: bg 5s ease forwards;
+    position: absolute;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+}
+
+    @keyframes bg{
+        0%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+
+.txtContainer {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 30px 60px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 244, 37, 0.8);
+    animation: up 6s ease forwards;
+}
+
+    @keyframes up{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+.logoPoke {
+    width: 300px;
+    height: 120px;
+    margin: 0px auto;
+    background-image: url("./logo-pokeapi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.txtContainer h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: rgb(170,170,170);
+    text-shadow: 1px 1px 1px #000;
+}
+
+.txtContainer h3 {
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: rgba(170,170,170.6);
+    text-shadow: 1px 1px 1px #000;
+
+}
+
+.txtContainer button {
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: rgba(255, 244, 37, 0.8);
+    border: 1px solid rgba(255, 244, 37, 0.8);
+    cursor: pointer;
+    background: transparent;
+}
+
+.txtContainer button:hover {
+    color: rgba(255, 244, 37, 1);
+    border: 1px solid rgba(255, 244, 37, 1);
+}

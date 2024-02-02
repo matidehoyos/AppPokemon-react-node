@@ -1,0 +1,77 @@
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0px 40px;
+}
+
+.firstRow {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.logo1 {
+    width: 120px;
+    height: 60px;
+    background-image: url("./logo-pokeapi.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+
+.menu { 
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: end;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    padding: 0;
+}
+
+.menu li a {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .7px;
+    font-family: Helvetica;
+    line-height: 14px;
+    color: rgba(255, 244, 37, 0.8);
+    text-shadow: .3px 1.3px 1px rgba(0,0,0,.2);
+    text-decoration: none;
+    margin: 0;
+    padding: 0px 15px;
+}
+
+.menu a:hover {
+    color: rgba(255, 244, 37, 1);
+    text-shadow: .3px 1.3px 1px rgba(0,0,0,.2);
+}
+
+.logo2 {
+    width: 60px;
+    height: 60px;
+    background-image: url("./icono.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.secondRow {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}

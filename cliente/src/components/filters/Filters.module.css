@@ -1,0 +1,45 @@
+.container {
+    width: auto;
+    height: auto;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container label {
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(170,170,170, 1);
+}
+
+.container select {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 7px;
+    margin: 0;
+    background: rgba(24,24,24, 0.2);
+    border-radius: 4px;
+    border: .5px solid rgba(170,170,170, .3);
+    color: rgba(170,170,170, 1);
+    cursor: pointer;
+}
+
+.container select:hover {
+    background-color: #1d1d1d;
+}
+
+.container select:focus {
+    outline: none;
+}
+
+
+
+
+
+
