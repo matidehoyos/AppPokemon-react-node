@@ -82,7 +82,7 @@ export default function Cards () {
             {
               currentPokemons.length === 0 && (
                 <div className={style.notFound}>
-                  <h3>Aún no hay pokemon´s de ese tipo</h3>
+                  <h3>There are no pokemon of that type yet</h3>
                   <img src="./sad.png" />
                 </div>
               )
