@@ -16,7 +16,7 @@ function App() {
   const createdPokemon = useSelector(state => state.createdPokemon);
 
   useEffect(() => {
-       axios("http://localhost:3001/pokemons/types")
+       axios("http://localhost:3002/pokemons/types")
         .then(
             ({data}) => {
               dispatch(setTypes(data))

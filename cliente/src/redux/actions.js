@@ -30,7 +30,7 @@ export const setTypes = (types) => {
 
 export const createPokemon = (formData) => async dispatch => {
     try {
-        const response = await axios.post("http://localhost:3001/pokemons", formData);
+        const response = await axios.post("http://localhost:3002/pokemons", formData);
         dispatch({ type: 'CREATE_POKEMON', payload: response.data });
     } catch (error) {
         dispatch({

@@ -15,7 +15,7 @@ export default function Detail() {
     }
 
     useEffect(()=>{
-            axios(`http://localhost:3001/pokemons/${id}`)
+            axios(`http://localhost:3002/pokemons/${id}`)
             .then(
                 ({data}) => {
                      if(data.name){

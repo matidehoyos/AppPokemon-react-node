@@ -16,7 +16,7 @@ export default function() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios('http://localhost:3001/pokemons');
+            const response = await axios('http://localhost:3002/pokemons');
             const pokemones = response.data;
             dispatch(setPokemons(pokemones));
           } catch (error) {
