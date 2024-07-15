@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setPokemons } from "../../redux/actions";
 import Cards from "../cards/Cards";
-import NavBar from "../navBar/NavBar";
 
 
 export default function() {
@@ -16,7 +15,7 @@ export default function() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios('http://localhost:3002/pokemons');
+            const response = await axios('https://pokemon-proyecto-production.up.railway.app/pokemons');
             const pokemones = response.data;
             dispatch(setPokemons(pokemones));
           } catch (error) {

@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import style from "./Detail.module.css";
-import NavBar from "../navBar/NavBar";
 
 
 export default function Detail() {
@@ -15,7 +14,7 @@ export default function Detail() {
     }
 
     useEffect(()=>{
-            axios(`http://localhost:3002/pokemons/${id}`)
+            axios(`https://pokemon-proyecto-production.up.railway.app/pokemons/${id}`)
             .then(
                 ({data}) => {
                      if(data.name){

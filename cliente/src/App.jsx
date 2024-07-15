@@ -17,7 +17,7 @@ function App() {
   const createdPokemon = useSelector(state => state.createdPokemon);
 
   useEffect(() => {
-       axios("http://localhost:3002/pokemons/types")
+       axios("htpps://pokemon-proyecto-production.up.railway.app/pokemons/types")
         .then(
             ({data}) => {
               dispatch(setTypes(data))
