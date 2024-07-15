@@ -1,9 +1,10 @@
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config();
 
 const sequelize = new Sequelize(
-   'postgresql://postgres:vCoGtMNwLBlnGnXTDFeKlkleVFyoFXmM@viaduct.proxy.rlwy.net:52501/railway',
+   process.env.DATABASE_URL,
    {
       logging: false, 
       native: false, 
