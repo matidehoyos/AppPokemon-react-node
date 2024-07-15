@@ -1,37 +1,42 @@
 .container {
-    width: auto;
-    height: auto;
+    width: 74%;
+    height: 60px;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding: 0px 40px;
-}
-
-.firstRow {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(60, 60, 60);
-}
+    align-items: center;
+    padding: 0 3%;
+    padding-top: 7px;
+    margin: 0 10%;
+    background-color: rgb(255, 77, 77);
+    position: fixed;
+} 
 
 .logo1 {
     width: auto;
     height: auto;
-    padding-top: 15px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.logo1 a {
+    margin: 0;
+    padding: 0;
 }
 
 .logo1 img {
-    width: 50%;
+    width: 38%;
     height: auto;
+    object-fit: scale-down;
 }
 
 .menu { 
     width: auto;
     height: auto;
     display: flex;
-    align-items: end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .menu ul {
@@ -45,37 +50,19 @@
 }
 
 .menu li a {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    letter-spacing: .7px;
-    font-family: Helvetica;
-    line-height: 14px;
-    color: rgba(255, 244, 37, 0.8);
-    text-shadow: .3px 1.3px 1px rgba(0,0,0,.2);
+    letter-spacing: .6px;
+    line-height: 18px;
+    color: rgb(36, 36, 36);
     text-decoration: none;
     margin: 0;
-    padding: 0px 15px;
+    margin-right: 12px;
+    padding: 0;
+    transition: all .3s ease;
 }
 
 .menu a:hover {
-    color: rgba(255, 244, 37, 1);
-    text-shadow: .3px 1.3px 1px rgba(0,0,0,.2);
+    color: rgb(129, 0, 0);
 }
 
-.logo2 {
-    width: 60px;
-    height: auto;
-    margin-top: 15px;
-}
-
-.logo2 img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-.secondRow {
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-}

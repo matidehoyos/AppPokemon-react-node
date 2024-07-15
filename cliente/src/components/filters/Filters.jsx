@@ -32,7 +32,7 @@ const handleSort = (event) => {
 
     return(
         <div className={style.container}>
-                <div>
+                <div className={style.box}>
                     <label>Origin:</label>
                     <select onChange={handleFilterOrigin}>
                         <option  value="all">All origins</option>
@@ -41,19 +41,20 @@ const handleSort = (event) => {
                     </select>
                 </div>
         
-                <div>
+                <div className={style.box}>
                     <label>Order by:</label>
                     <select onChange={handleOrderBy} >
                         <option value="name">Name</option>
                         <option value="attack">Attack</option>
                     </select>
                 </div>
-                <div>
-                <label>Direction:</label>
-                <select onChange={handleSort} >
-                    <option value="asc">Asc</option>
-                    <option value="desc">Desc</option>
-                </select>
+
+                <div className={style.box}>
+                    <label>Direction:</label>
+                    <select onChange={handleSort} >
+                        <option value="asc">Asc</option>
+                        <option value="desc">Desc</option>
+                    </select>
                 </div>
                 <SearchBar />
     </div>

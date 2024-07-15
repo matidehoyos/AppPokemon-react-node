@@ -8,8 +8,8 @@ const getTypes = require('../controllers/getTypes');
 
 const router = Router();
 
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
+
+
 router.get("/", getPokemons);
 router.get("/types", getTypes);
 router.get("/name", getPokemonsbyName);

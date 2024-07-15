@@ -6,26 +6,21 @@ export default function NavBar() {
     
     return(
         <div className={style.container}>
-            <div className={style.firstRow}>
-                    <Link to="/">
                          <div className={style.logo1}>
-                            <img src="./logo-pokeapi.png" />
+                             <Link to="/">
+                                   <img src="./logo-pokeapi.png" />
+                            </Link>
                          </div>
-                    </Link>
                     <div className={style.menu}>
                         <ul>
                             <li>
-                                <Link to="/home">HOME</Link>
+                                <Link to="/home">Home</Link>
                             </li>
                             <li>
-                                <Link to="/create">CREATE</Link>
+                                <Link to="/create">Create-Pokemon</Link>
                             </li>
                         </ul>
                     </div>
-                    <div className={style.logo2}>
-                            <img src="./icono.png" />
-                    </div>
             </div>            
-        </div>
     )
 }

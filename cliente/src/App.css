@@ -3,6 +3,9 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-image: url('./bg.jpeg');
+  background-size: cover;
+  background-color: rgb(255, 255, 175);
 }
 
 a {

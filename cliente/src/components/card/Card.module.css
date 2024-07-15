@@ -1,55 +1,89 @@
 .container {
-    width: 280px;
+    width: 200px;
     height: auto;
     background: rgba(27, 27, 27, 1);  
     border: 1px solid rgba(244, 64, 9,.8);
-    margin: 0px 20px;
+    margin: 0;
+    margin-right: 20px;
     margin-bottom: 20px;
-    padding: 0px;
+    padding: 20px 0;
     border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
     text-align: center;
+    transition: all .4s ease-out;
+}
+
+.container:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: 0px 0px 50px #000000;
+    background-color: rgb(147, 31, 31);
+}
+
+.container:hover h2 {
+    color: #e3e3e3;
+    text-shadow: none;
+}
+
+.container:hover h4 {
+    color: #f4f4f4;
+    text-shadow: none;
+}
+
+.container:hover h3 {
+    color: rgb(255, 255, 103);
+    text-shadow: none;
 }
 
 .image {
-    width: 280px;
-    height: 80px;
-    overflow: hidden;
-    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .image img {
-    object-fit: scale-down;
     width: auto;
     height: auto;
+    padding: 0;
+    margin: 0;
+    filter: drop-shadow(0px 0px 20px #000);
 }
 
 .container h2 {
-    font-size: 26px;
-    line-height: 20px;
-    letter-spacing: 1.2px;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: .6px;
     color:#f44009cc;
-    text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);
-}
-
-.container h3 {
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 1px;
-    color: rgb(45, 98, 255);
-    text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);
+    padding: 0;
+    padding-bottom: 4px;
+    margin: 0;
 }
 
 .container h4 {
     font-size: 16px;
+    font-weight: 400;
     line-height: 16px;
-    letter-spacing: 1px;
+    letter-spacing: .6px;
     color: rgba(180, 180, 180, 1);
     text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);
+    padding: 0;
+    margin: 0;
 }
 
+.container h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: .6px;
+    color: rgb(255, 255, 22);
+    text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);
+    padding: 10px 0px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+
 .attackValue {
-    color: rgb(255, 243, 21);
+    font-size: 20px;
+    color: rgb(255, 255, 146);
 }

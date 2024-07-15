@@ -1,41 +1,58 @@
 .container {
-    width: auto;
-    height: auto;
-    margin: 50px;
+    width: 72%;
+    height: 60px;
+    margin: 0;
+    padding: 0px 4%;
+    padding-top: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    background-color: rgb(78, 78, 255);
+    position: fixed;
+    top: 66px;
+}
+
+.box {
+    width: auto;
 }
 
 .container label {
     width: auto;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    color: rgba(170,170,170, 1);
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
 }
 
 .container select {
     width: auto;
     height: auto;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 7px;
-    margin-right: 50px;
-    background: rgba(24,24,24, 0.2);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    padding: 4px;
+    margin: 0;
+    margin-left: 6px;
+    background: rgb(207, 207, 207);
     border-radius: 4px;
-    border: .5px solid rgba(170,170,170, .3);
-    color: rgba(170,170,170, 1);
+    border: .5px solid #fff;
+    color: rgb(70, 70, 70);
     cursor: pointer;
 }
 
 .container select:hover {
-    background-color: #1d1d1d;
+    background-color: #a7a7a7;
 }
 
 .container select:focus {
     outline: none;
+}
+
+.container select option {
+    background-color: #fff;
+    font-weight: 600;
 }
 
 
