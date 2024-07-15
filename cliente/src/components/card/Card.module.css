@@ -105,7 +105,7 @@
 @media (max-width: 600px) {
 
     .container {
-        width: 180px;
+        width: 220px;
         height: auto;
         background: rgb(40, 40, 40);  
         border: 2px solid rgb(80, 0, 0);
