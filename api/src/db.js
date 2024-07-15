@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const sequelize = new Sequelize(
-   `postgres://postgres:papaCarlos_10@localhost/pokemons`,
+   `postgresql://postgres:vCoGtMNwLBlnGnXTDFeKlkleVFyoFXmM@viaduct.proxy.rlwy.net:52501/railway`,
    {
       logging: false, 
       native: false, 
