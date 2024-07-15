@@ -135,14 +135,9 @@
     font-weight: 400;
     padding: 4px 10px;
     cursor: pointer;
-    background: rgb(255, 49, 49);
     color: #fff;
     border-radius: 3px;
     border: none;
-}
-
-.pagination button:hover {
-    background: rgb(255, 49, 49);
 }
 
 
