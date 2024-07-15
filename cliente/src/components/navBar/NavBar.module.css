@@ -67,3 +67,96 @@
     color: rgb(223, 223, 0);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        width: auto;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4%;
+        padding-top: 0px;
+        margin: 0;
+        background-color: rgb(255, 77, 77);
+        position: fixed;
+    } 
+    
+    .logo1 {
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    .logo1 a {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .logo1 img {
+        width: 38%;
+        height: auto;
+        object-fit: scale-down;
+    }
+    
+    .menu { 
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .menu li {
+        display: inline;
+        padding: 0;
+    }
+    
+    .menu li a {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: .6px;
+        line-height: 16px;
+        text-decoration: none;
+        text-shadow: none;
+        margin: 0;
+        margin-right: 15px;
+        color: rgb(255, 255, 123);
+        padding: 0;
+        transition: all .3s ease;
+    }
+    
+    .menu a:hover {
+        color: rgb(223, 223, 0);
+    }
+
+}
+

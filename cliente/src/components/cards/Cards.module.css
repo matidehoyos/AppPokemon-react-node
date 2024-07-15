@@ -146,3 +146,156 @@
 
 
 
+
+
+
+
+
+@media (max-width: 600px) {
+    
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: inherit;
+    }
+    
+    .subcontainer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        padding-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        background-color: rgb(255, 255, 139);
+    }
+    
+    .types {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: rgb(78, 78, 255);
+        border: 1px solid #fff;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    .types li {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .types button {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(232, 232, 232);
+        text-shadow: 0px 0px 4px #333;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .types button:hover {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .notFound {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    }
+    
+    .notFound h3 {
+        width: 100%;
+        font-size: 24px;
+        color: rgb(33, 33, 33);
+        text-align: center;
+        margin: 30px auto;
+        text-shadow: none;
+    }
+    
+    .notFound img {
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 30px;
+        filter: drop-shadow(0px 0px 20px #000);
+    }
+    
+    .cajon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    
+    .cardsContainer {
+      width: 100%;
+      height: 540px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      overflow-y: scroll;
+      padding: 30px 0px;
+    }
+    
+    .cardsContainer::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        min-height: 550px;
+        padding-left: 0px;
+    }
+    
+    
+    .pagination {
+        width: 84%;
+        height: 30px;
+        background: #222;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pagination_span {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: .6px;
+        margin: 0px 20px;
+    }
+    
+    .pagination button {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 4px 10px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 3px;
+        border: none;
+    }
+}
+
+
+
+
+
+
+

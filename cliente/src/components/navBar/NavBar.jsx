@@ -17,7 +17,7 @@ export default function NavBar() {
                                 <Link to="/home">Home</Link>
                             </li>
                             <li>
-                                <Link to="/create">Create-Pokemon</Link>
+                                <Link to="/create">Create</Link>
                             </li>
                         </ul>
                     </div>

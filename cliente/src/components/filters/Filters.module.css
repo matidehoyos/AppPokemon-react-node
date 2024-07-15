@@ -12,8 +12,15 @@
     top: 66px;
 }
 
+.filters {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
 .box {
     width: auto;
+    margin-right: 20px;
 }
 
 .container label {
@@ -60,3 +67,87 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+    }
+    
+    .filters {
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 20px;
+
+    }
+    
+    .box {
+        width: auto;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container label {
+        width: auto;
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        text-shadow: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    
+    .container select {
+        width: 90px;
+        height: auto;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .6px;
+        padding: 2px;
+        margin: 0;
+        margin-left: 0px;
+        background: rgb(207, 207, 207);
+        border-radius: 4px;
+        border: .5px solid #fff;
+        color: rgb(70, 70, 70);
+        cursor: pointer;
+    }
+    
+    .container select:hover {
+        background-color: #a7a7a7;
+    }
+    
+    .container select:focus {
+        outline: none;
+    }
+    
+    .container select option {
+        background-color: #fff;
+        font-weight: 600;
+    }
+    
+    
+}

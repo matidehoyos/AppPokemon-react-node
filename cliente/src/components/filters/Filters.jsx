@@ -32,6 +32,7 @@ const handleSort = (event) => {
 
     return(
         <div className={style.container}>
+            <div className={style.filters}>
                 <div className={style.box}>
                     <label>Origin:</label>
                     <select onChange={handleFilterOrigin}>
@@ -55,6 +56,7 @@ const handleSort = (event) => {
                         <option value="asc">Asc</option>
                         <option value="desc">Desc</option>
                     </select>
+                </div>
                 </div>
                 <SearchBar />
     </div>
