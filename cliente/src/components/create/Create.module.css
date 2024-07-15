@@ -1,18 +1,21 @@
 .container {
-    width: auto;
-    min-height: auto;
+    width: 80%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
-    padding-bottom: 50px;
+    background-color: rgb(255, 255, 139);
+    margin: 0 auto;
 }
 
 .createTitle h2 {
-    padding-top: 20px;
-    font-size: 26px;
-    font-weight: 600;
-    text-shadow: 1px 1px 1px #000;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    padding-top: 100px;
+    margin: 0;
+    color: #222;
 }
 
 .succes {
@@ -25,7 +28,7 @@ form {
     padding: 40px 120px;
     margin: 0px auto;
     margin-top: 20px;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .2);
     display: flex;
     flex-direction: row;
 
@@ -49,7 +52,7 @@ form {
 .errors {
     font-size: 18px;
     font-weight: 500;
-    color: rgb(156, 11, 11);
+    color: rgb(255, 35, 35);
     text-align: left;
     padding-left: 30px;
     margin-bottom: 20px;
@@ -69,8 +72,8 @@ label {
     font-size: 18px;
     font-weight: 600;
     margin-right: 10px;
-    text-shadow: 1px 1px 1px #000;
     display: inline;
+    color: #111;
 }
 
 input {
@@ -78,15 +81,19 @@ input {
     height: auto;
     margin: 0px;
     padding: 10px;
-    background-color: transparent;
-    border: .5px solid rgba(170, 170, 170, .6);
+    background-color: #e6e6e6;
+    border: .5px solid #111;
     border-radius: 5px;
     display: inline;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 input::placeholder {
     font-size: 16px;
     font-weight: 400;
+    color: #222;
 }
 
 .rangeDiv {
@@ -111,7 +118,7 @@ input[type="range"]{
     background-repeat:no-repeat;
     overflow:hidden;
     outline: none;
-    border: .5px solid rgba(170, 170, 170, .6);
+    border: .5px solid #222;
     cursor: pointer;
   }
     
@@ -138,22 +145,23 @@ input[type="range"]{
 select {
     width: 300px;
     height: auto;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
     padding: 6px 16px;
     border-radius: 6px;
-    border: .5px solid rgba(170, 170, 170, .6);
-    background: transparent;
+    border: .5px solid #fff;
+    background: #a3a3a3;
     cursor: pointer;
+    color: #111;
 }
 
 select:hover {
-    background: #111;
+    background: #b8b8b8;
 }
 
 select option {
-    background-color: #222; 
+    background-color: #dcdcdc; 
   }
   
 input[type="submit"]{

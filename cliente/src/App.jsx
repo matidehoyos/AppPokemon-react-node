@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTypes } from './redux/actions';
+import NavBar from './components/navBar/NavBar';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div>
-   
+       { location.pathname !== '/' ? <NavBar /> : null }
       <Routes>
         <Route path="/"
                element={<Landing />}>

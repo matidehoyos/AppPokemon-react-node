@@ -6,25 +6,9 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: #111;
+    background-image: url('./bg.jpeg');
+    background-size: cover;
 }
-
-.background {
-    width: 100%;
-    height: 100vh;
-    animation: bg 5s ease forwards;
-    position: absolute;
-}
-
-.background img {
-    width: 100%;
-    height: 100%;
-}
-
-    @keyframes bg{
-        0%{opacity: 1;}
-        100%{opacity: 0;}
-    }
 
 .txtContainer {
     width: auto;
@@ -32,8 +16,10 @@
     text-align: center;
     padding: 30px 60px;
     border-radius: 6px;
-    border: 1px solid rgba(255, 244, 37, 0.8);
-    animation: up 6s ease forwards;
+    border: 1px solid #fff;
+    animation: up 3s ease forwards;
+    background-color: #d1d1d17d;
+    backdrop-filter: blur(6px);
 }
 
     @keyframes up{
@@ -42,44 +28,48 @@
     }
 
 .logoPoke {
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0px auto;
 }
 
+.logoPoke img {
+    width: 30%;
+}
+
 .txtContainer h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
-    letter-spacing: 1.2px;
-    color: rgb(170,170,170);
-    text-shadow: 1px 1px 1px #000;
+    letter-spacing: .6px;
+    color: #111;
+    margin: 15px 0;
+    margin-bottom: 0;
 }
 
 .txtContainer h3 {
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: 1.2px;
-    color: rgba(170,170,170.6);
-    text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    color: #222;
+    margin: 0;
 
 }
 
 .txtContainer button {
     width: auto;
     height: auto;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1.2px;
     margin-top: 20px;
     padding: 8px 16px;
     border-radius: 6px;
-    color: rgba(255, 244, 37, 0.8);
-    border: 1px solid rgba(255, 244, 37, 0.8);
+    background-color: rgb(255, 50, 50);
+    border: 1px solid #fff;
+    color: #fff;
     cursor: pointer;
-    background: transparent;
 }
 
 .txtContainer button:hover {
-    color: rgba(255, 244, 37, 1);
-    border: 1px solid rgba(255, 244, 37, 1);
+   background-color: rgb(255, 9, 9);
 }

@@ -54,7 +54,9 @@ export default function Cards () {
     return(
 
     <div className={style.container}>
-         <Filters /> 
+        { !searchedPokemon && (
+            <Filters /> 
+          )}
          { searchedPokemon && (
           <SearchedCard pokemon={searchedPokemon}/>
           )}
@@ -91,7 +93,8 @@ export default function Cards () {
                       }
                 </div>
            
-
+                      {
+                        currentPokemons.length !== 0 && (
                         <div className={style.pagination}>
                                 {Array.from({ length: Math.ceil(currentPokemons.length / pageSize) }, (_, index) => (
                                   <div key={index}>
@@ -109,6 +112,7 @@ export default function Cards () {
                                   </div>
                                 ))}
                       </div>
+                      )}
                   </div>
               </div>
         </div>

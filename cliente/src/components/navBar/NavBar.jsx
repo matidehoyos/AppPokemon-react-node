@@ -7,7 +7,7 @@ export default function NavBar() {
     return(
         <div className={style.container}>
                          <div className={style.logo1}>
-                             <Link to="/">
+                             <Link to="/home">
                                    <img src="./logo-pokeapi.png" />
                             </Link>
                          </div>

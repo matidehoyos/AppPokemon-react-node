@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 export default function Landing() {
     return(
         <div className={style.container}>
-                <div className={style.background}>
-                    <img src="./landing.jpeg"  />
-                </div>
                 <div className={style.txtContainer}>
                 <div className={style.logoPoke}>
                     <img src="./logo-pokeapi.png" alt="" />

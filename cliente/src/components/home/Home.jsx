@@ -30,8 +30,6 @@ export default function() {
 
     return(
         <div className={style.container}>
-
-          {  location.path !== "/" ? <NavBar /> : null  }
             <Cards /> 
         </div>
     )

@@ -128,7 +128,6 @@ export default function Create() {
 
     return(
         <div className={style.container}>
-            <NavBar />
             
             <div className={style.createTitle}>
               {(Object.keys(errors).length !== 0) && !createdPokemon && (
