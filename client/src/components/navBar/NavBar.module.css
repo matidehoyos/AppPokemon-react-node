@@ -9,6 +9,7 @@
     margin: 0 10%;
     background-color: rgb(255, 77, 77);
     position: fixed;
+    z-index: 1000;
 } 
 
 .logo1 {
@@ -90,7 +91,7 @@
 
 @media (max-width: 600px) {
     .container {
-        width: auto;
+        width: 96%;
         height: 60px;
         display: flex;
         justify-content: space-between;
@@ -117,6 +118,7 @@
     
     .logo1 img {
         width: 38%;
+        min-width: 70px;
         height: auto;
         object-fit: scale-down;
     }

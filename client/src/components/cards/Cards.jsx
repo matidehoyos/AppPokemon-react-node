@@ -61,11 +61,13 @@ export default function Cards () {
           <SearchedCard pokemon={searchedPokemon}/>
           )}
         <div className={style.subcontainer}>
-          <div className={style.types}>
-            <button value="all" onClick={handleType}>All types</button>
-            {types.map(type => (
-              <li key={type.id} value={type.name}><button value={type.name} onClick={handleType}>{type.name}</button></li>
-            ))}
+          <div className={style.typesContainer}>
+            <div className={style.types}>
+              <button value="all" onClick={handleType}>All types</button>
+              {types.map(type => (
+                <li key={type.id} value={type.name}><button value={type.name} onClick={handleType}>{type.name}</button></li>
+              ))}
+            </div>
           </div>
             <div className={style.cajon}>
               <div className={style.cardsContainer}>
