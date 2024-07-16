@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation, useSearchParams } from 'react-router-dom'
+
 import './App.css'
 import Landing from './components/landing/Landing'
 import Home from './components/home/Home';
@@ -9,6 +9,7 @@ import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { setTypes } from './redux/actions';
 import NavBar from './components/navBar/NavBar';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   const createdPokemon = useSelector(state => state.createdPokemon);
 
   useEffect(() => {
-       axios("htpps://pokemon-proyecto-production.up.railway.app/pokemons/types")
+       axios("https://pokemon-proyecto-production.up.railway.app/pokemons/types")
         .then(
             ({data}) => {
               dispatch(setTypes(data))
