@@ -84,7 +84,8 @@ export default function Cards () {
               <div className={style.cardsContainer}>
               {loading ? (
               <div className={style.loader}>
-                <img src="./loader.gif" alt="Loading..." />
+                <h3>Loading Pokemons...</h3>
+                <img src="./pikaWalk.gif" alt="Loading..." />
               </div>
             ) : (
                 <div className={style.cards}>
@@ -112,7 +113,7 @@ export default function Cards () {
                 </div>
                )}                    
                 {
-                        currentPokemons.length !== 0 && (
+                        currentPokemons.length !== 0 &&  loading === 'false' && (
                         <div className={style.pagination}>
                                 {Array.from({ length: Math.ceil(currentPokemons.length / pageSize) }, (_, index) => (
                                   <div key={index}>
