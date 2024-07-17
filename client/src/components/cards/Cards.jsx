@@ -42,6 +42,8 @@ export default function Cards () {
     const indexOfLastPokemon = currentPage * pageSize;
     const indexOfFirstPokemon = indexOfLastPokemon - pageSize;
     const currentPokemons = filteredPokemons.slice(indexOfFirstPokemon, indexOfLastPokemon);
+    const totalPages = Math.ceil(filteredPokemons.length / pageSize);
+
 
     const paginate = (pageNumber) => {
       setCurrentPage(pageNumber);
@@ -88,7 +90,7 @@ export default function Cards () {
                       {
                         currentPokemons.length === 0 && (
                           <div className={style.notFound}>
-                            <h3>There are no pokemon of that type yet</h3>
+                            <h3>There are no pokemons of that type yet</h3>
                             <img src="./sad.png" />
                           </div>
                         )
@@ -110,7 +112,7 @@ export default function Cards () {
                                       <button key="next" 
                                               className={style.boton}
                                               onClick={() => paginate(currentPage + 1)}
-                                              disabled={currentPage === 4}>
+                                              disabled={currentPage === totalPages}>
                                         Next
                                       </button>
                                   </div>

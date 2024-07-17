@@ -65,29 +65,43 @@
 
 .notFound {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
+    justify-content: start;
+    align-items: end;
+    padding-left: 60px;
 }
 
 .notFound h3 {
-    width: 100%;
-    font-size: 24px;
-    color: rgb(33, 33, 33);
+    width: 220px;
+    color: rgb(52, 52, 52);
     text-align: center;
-    margin: 30px auto;
+    text-align-last: right;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    line-height: 32px;
+    margin: 0;
+    padding: 50px 20px;
     text-shadow: none;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    border-radius:50% 50% 0 50%;
+    position: relative;
+    top: -204px;
+    left: 62px;
+    z-index: 100;
+    border: .5px solid #c1c1c1;
 }
 
 .notFound img {
-    width: 30%;
+    width: 500px;
     height: auto;
-    margin: 0 auto;
-    margin-top: 30px;
-    filter: drop-shadow(0px 0px 20px #000);
+    margin: 0;
+    filter: none;
+    object-fit: scale-down;
+    mask-image: linear-gradient(to bottom, #000 10%, transparent);
+    opacity: .9;
 }
 
 .cajon {
