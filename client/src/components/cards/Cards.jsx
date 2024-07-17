@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Card from "../card/Card";
 import Filters from "../filters/Filters";
 import SearchedCard from "../searchedCard/SearchedCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { setFilterType } from "../../redux/actions";
 
 
@@ -17,7 +17,16 @@ export default function Cards () {
     const orderBy = useSelector(state => state.orderBy);
     const sort = useSelector(state => state.sort);
     const [currentPage, setCurrentPage] = useState(1);
+    const [loading, setLoading] = useState(true);
     const dispatch = useDispatch();
+
+
+    useEffect(() => {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000); 
+    }, [pokemons, filterOrigin, filterType, orderBy, sort]);
 
 
     const filteredPokes = pokemons.filter((pokemon) => {
@@ -73,6 +82,11 @@ export default function Cards () {
           </div>
             <div className={style.cajon}>
               <div className={style.cardsContainer}>
+              {loading ? (
+              <div className={style.loader}>
+                <img src="./loader.gif" alt="Loading..." />
+              </div>
+            ) : (
                 <div className={style.cards}>
                       { currentPokemons
                         .sort((a, b) => {
@@ -96,8 +110,8 @@ export default function Cards () {
                         )
                       }
                 </div>
-           
-                      {
+               )}                    
+                {
                         currentPokemons.length !== 0 && (
                         <div className={style.pagination}>
                                 {Array.from({ length: Math.ceil(currentPokemons.length / pageSize) }, (_, index) => (
