@@ -28,7 +28,7 @@ form {
     padding: 40px 120px;
     margin: 0px auto;
     margin-top: 20px;
-    background: rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
 

@@ -102,11 +102,13 @@ export default function Cards () {
                                   <div key={index}>
                                       <button key="previous" 
                                               onClick={() => paginate(currentPage -1)}
+                                              className={style.boton}
                                               disabled={currentPage === 1} >
                                         Previous
                                       </button>
                                       <span className={style.pagination_span}>{`Page: ${currentPage}`}</span>
                                       <button key="next" 
+                                              className={style.boton}
                                               onClick={() => paginate(currentPage + 1)}
                                               disabled={currentPage === 4}>
                                         Next

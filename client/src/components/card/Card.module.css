@@ -1,16 +1,14 @@
 .container {
-    width: 200px;
+    width: 220px;
     height: auto;
     background: rgb(255, 255, 153);  
     border: .5px solid #dfdfdf;
     margin: 0;
-    margin-right: 20px;
-    margin-bottom: 20px;
     padding: 0;
     border-radius: 6px;
     text-align: center;
     transition: all .4s ease-out;
-    box-shadow: 0 0 30px #9b9b9b55;
+    box-shadow: 0 0 20px #9b9b9b55;
     box-sizing: border-box;
 
 }
@@ -18,7 +16,7 @@
 .container:hover {
     transform: scale(1.1);
     z-index: 10;
-    box-shadow: 0px 0px 50px #000000;
+    box-shadow: 0px 0px 20px #232323;
     background-color: rgb(255, 77, 77);
 }
 
