@@ -26,7 +26,7 @@ export default function Cards () {
       setTimeout(() => {
         setLoading(false);
       }, 1000); 
-    }, [pokemons, filterOrigin, filterType, orderBy, sort]);
+    }, [pokemons, filterOrigin, filterType, orderBy, sort ]);
 
 
     const filteredPokes = pokemons.filter((pokemon) => {
@@ -113,7 +113,7 @@ export default function Cards () {
                 </div>
                )}                    
                 {
-                        currentPokemons.length !== 0 &&  loading === 'false' && (
+                        currentPokemons.length !== 0 &&  !loading && (
                         <div className={style.pagination}>
                                 {Array.from({ length: Math.ceil(currentPokemons.length / pageSize) }, (_, index) => (
                                   <div key={index}>
