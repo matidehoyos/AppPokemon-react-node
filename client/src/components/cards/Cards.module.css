@@ -408,18 +408,18 @@
     }
 
     .pagination {
-        width: calc(100vw - 100px);
+        width: calc(100vw - 90px);
         padding: 0;
         margin: 0;
         height: 30px;
-        background: #222;
+        background: #6078ff;
         padding: 10px 0px;
         margin: 0;
         display: flex;
         justify-content: center;
         position: absolute;
         bottom: 0;
-        margin-left: 110px;
+        margin-left: 100px;
     }
     
     .pagination_span {
@@ -427,17 +427,23 @@
         font-weight: 500;
         letter-spacing: .6px;
         margin: 0px 20px;
-        color: #959595;
+        color: #ebebeb;
     }
     
-    .pagination button {
+    .boton:not(:disabled) {
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
         padding: 4px 10px;
         cursor: pointer;
-        color: #fff;
+        color: #1d2fed;
         border-radius: 3px;
         border: none;
+        background-color: rgb(224, 224, 224);
+    }
+    
+    .boton:not(:disabled):hover {
+        background-color: rgb(153, 198, 237);
+        color: #222;
     }
 }
 
