@@ -225,10 +225,10 @@
     
     .container {
         width: 100%;
-        height: calc(100vh - 160px);
+        height: calc(100vh);
         margin: 0;
         padding: 0;
-        overflow: inherit;
+        overflow: hidden;
     }
     
     .subcontainer {
