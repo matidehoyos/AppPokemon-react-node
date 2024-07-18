@@ -308,17 +308,18 @@
 }
     
 .notFound {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: start;
     align-items: start;
     padding-left: 0px;
-    padding-top: 260px;
+    padding-top: 180px;
+    overflow: hidden;
 }
 
 .notFound h3 {
-    width: 120px;
+    width: 180px;
     color: rgb(52, 52, 52);
     text-align: center;
     text-align-last: right;
@@ -340,7 +341,7 @@
 }
 
 .notFound img {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin: 0;
     filter: none;
