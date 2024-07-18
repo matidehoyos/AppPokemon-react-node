@@ -120,7 +120,7 @@
 
 @media (max-width: 600px) {
     .container {
-        width: 130px;
+        width: 120px;
         height: auto;
         background: rgb(255, 255, 153);  
         border: .5px solid #a5a5a5;
