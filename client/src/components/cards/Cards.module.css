@@ -247,7 +247,7 @@
 .typesContainer {
     width: auto;
     min-width: 90px;
-    height: calc(100vh);
+    height: 100%;
     padding: 0;
     padding-top: 20px;
     padding-bottom: 0px;
@@ -263,7 +263,7 @@
 
 .types {
     width: auto;
-    height: 100%;
+    height: 50%;
     padding: 20px 0;
     padding-bottom: 100px;
     border: none;
@@ -389,7 +389,7 @@
     
     .cards {
         width: 100%;
-        min-height: 360px;
+        height: 70%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -408,7 +408,7 @@
     }
 
     .pagination {
-        width: 100%;
+        width: calc(100vw - 100px);
         padding: 0;
         margin: 0;
         height: 30px;
@@ -417,7 +417,9 @@
         margin: 0;
         display: flex;
         justify-content: center;
-        position: inherit;
+        position: absolute;
+        bottom: 0;
+        margin-left: 110px;
     }
     
     .pagination_span {
