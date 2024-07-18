@@ -263,7 +263,7 @@
 
 .types {
     width: auto;
-    height: 400px;
+    height: 100%;
     padding: 20px 0;
     padding-bottom: 100px;
     border: none;
@@ -389,7 +389,7 @@
     
     .cards {
         width: 100%;
-        min-height: 400px;
+        min-height: 360px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -417,6 +417,7 @@
         margin: 0;
         display: flex;
         justify-content: center;
+        position: inherit;
     }
     
     .pagination_span {
