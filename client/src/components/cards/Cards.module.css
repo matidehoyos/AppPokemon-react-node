@@ -390,7 +390,7 @@
     
     .cards {
         width: 100%;
-        height: 74%;
+        height: 75%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
