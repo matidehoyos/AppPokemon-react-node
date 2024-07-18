@@ -26,8 +26,6 @@ export default function Detail() {
 
     return(
         <div className={style.container}>
-         <h2>Pokemon's details</h2>
-
             <div className={style.card}>
                 <div className={style.image}>
                     <img src={pokemon.image} alt={pokemon.name} />

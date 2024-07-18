@@ -120,10 +120,10 @@
 
 @media (max-width: 600px) {
     .container {
-        width: 110px;
+        width: 130px;
         height: auto;
         background: rgb(255, 255, 153);  
-        border: .5px solid #dfdfdf;
+        border: .5px solid #a5a5a5;
         margin: 0;
         padding: 0;
         border-radius: 4px;
@@ -135,7 +135,7 @@
     }
     
     .container:hover {
-        transform: scale(1.04);
+        transform: scale(1.02);
         z-index: 10;
         box-shadow: 0px 0px 20px #232323;
         background-color: rgb(255, 77, 77);
@@ -167,16 +167,16 @@
     }
     
     .image img {
-        width: 80%;
+        width: 70%;
         height: auto;
         padding: 0;
         margin: 0;
-        filter: drop-shadow(0px 0px 20px #ffffff);
+        filter: drop-shadow(0px 0px 20px #f6ff00);
         z-index: inherit;
     }
     
     .container h2 {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 800;
         line-height: 16px;
         letter-spacing: .4px;

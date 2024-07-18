@@ -71,70 +71,73 @@ export default function Cards () {
          { searchedPokemon && (
           <SearchedCard pokemon={searchedPokemon}/>
           )}
-        <div className={style.subcontainer}>
-          <div className={style.typesContainer}>
-            <div className={style.types}>
-              <button value="all" onClick={handleType}>All types</button>
-              {types.map(type => (
-                <li key={type.id} value={type.name}><button value={type.name} onClick={handleType}>{type.name}</button></li>
-              ))}
-            </div>
-          </div>
-              <div className={style.cardsContainer}>
-              {loading ? (
-              <div className={style.loader}>
-                <h3>Loading Pokemons...</h3>
-                <img src="./pikaWalk.gif" alt="Loading..." />
-              </div>
-            ) : (
-                <div className={style.cards}>
-                      { currentPokemons
-                        .sort((a, b) => {
-                            if (orderBy === 'name') {
-                              return a.name.localeCompare(b.name) * (sort === 'asc' ? 1 : -1);
-                            } else if (orderBy === 'attack') {
-                              return (a.attack - b.attack) * (sort === 'asc' ? 1 : -1);
-                            }
-                          })
-                        .map((pokemon,index) => (
-                                <div key={index}>
-                                    <Card pokemon={pokemon}/>
-                                </div>
-                            ))}
-                      {
-                        currentPokemons.length === 0 && (
-                          <div className={style.notFound}>
-                            <h3>There are no pokemons of that type yet</h3>
-                            <img src="./sad.png" />
-                          </div>
-                        )
-                      }
+          {
+            !searchedPokemon && (
+            <div className={style.subcontainer}>
+              <div className={style.typesContainer}>
+                <div className={style.types}>
+                  <button value="all" onClick={handleType}>All types</button>
+                  {types.map(type => (
+                    <li key={type.id} value={type.name}><button value={type.name} onClick={handleType}>{type.name}</button></li>
+                  ))}
                 </div>
-               )}                    
-                {
-                        currentPokemons.length !== 0 &&  !loading && (
-                        <div className={style.pagination}>
-                                {Array.from({ length: Math.ceil(currentPokemons.length / pageSize) }, (_, index) => (
-                                  <div key={index}>
-                                      <button key="previous" 
-                                              onClick={() => paginate(currentPage -1)}
-                                              className={style.boton}
-                                              disabled={currentPage === 1} >
-                                        Previous
-                                      </button>
-                                      <span className={style.pagination_span}>{`Page: ${currentPage}`}</span>
-                                      <button key="next" 
-                                              className={style.boton}
-                                              onClick={() => paginate(currentPage + 1)}
-                                              disabled={currentPage === totalPages}>
-                                        Next
-                                      </button>
-                                  </div>
-                                ))}
-                      </div>
-                      )}
+              </div>
+                  <div className={style.cardsContainer}>
+                  {loading ? (
+                  <div className={style.loader}>
+                    <h3>Loading Pokemons...</h3>
+                    <img src="./pikaWalk.gif" alt="Loading..." />
                   </div>
-        </div>
+                ) : (
+                    <div className={style.cards}>
+                          { currentPokemons
+                            .sort((a, b) => {
+                                if (orderBy === 'name') {
+                                  return a.name.localeCompare(b.name) * (sort === 'asc' ? 1 : -1);
+                                } else if (orderBy === 'attack') {
+                                  return (a.attack - b.attack) * (sort === 'asc' ? 1 : -1);
+                                }
+                              })
+                            .map((pokemon,index) => (
+                                    <div key={index}>
+                                        <Card pokemon={pokemon}/>
+                                    </div>
+                                ))}
+                          {
+                            currentPokemons.length === 0 && (
+                              <div className={style.notFound}>
+                                <h3>There are no pokemons of that type yet</h3>
+                                <img src="./sad.png" />
+                              </div>
+                            )
+                          }
+                    </div>
+                  )}                    
+                    {
+                            currentPokemons.length !== 0 &&  !loading && (
+                            <div className={style.pagination}>
+                                    {Array.from({ length: Math.ceil(currentPokemons.length / pageSize) }, (_, index) => (
+                                      <div key={index}>
+                                          <button key="previous" 
+                                                  onClick={() => paginate(currentPage -1)}
+                                                  className={style.boton}
+                                                  disabled={currentPage === 1} >
+                                            Previous
+                                          </button>
+                                          <span className={style.pagination_span}>{`Page: ${currentPage}`}</span>
+                                          <button key="next" 
+                                                  className={style.boton}
+                                                  onClick={() => paginate(currentPage + 1)}
+                                                  disabled={currentPage === totalPages}>
+                                            Next
+                                          </button>
+                                      </div>
+                                    ))}
+                          </div>
+                          )}
+                      </div>
+            </div>
+            )}
         </div>
     )
 }
