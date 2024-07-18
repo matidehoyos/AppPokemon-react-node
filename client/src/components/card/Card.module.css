@@ -118,6 +118,129 @@
 
 
 
+@media (max-width: 600px) {
+    .container {
+        width: 130px;
+        height: auto;
+        background: rgb(255, 255, 153);  
+        border: .5px solid #dfdfdf;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        text-align: center;
+        transition: all .4s ease-out;
+        box-shadow: 0 0 20px #9b9b9b55;
+        box-sizing: border-box;
+    
+    }
+    
+    .container:hover {
+        transform: scale(1.04);
+        z-index: 10;
+        box-shadow: 0px 0px 20px #232323;
+        background-color: rgb(255, 77, 77);
+    }
+    
+    .container:hover h2 {
+        color: #ffdcdc;
+        text-shadow: none;
+    }
+    
+    .container:hover h4 {
+        color: #f4f4f4;
+        text-shadow: none;
+        background-color: #474747;
+    }
+    
+    .container:hover h3 {
+        color: rgb(255, 255, 237);
+        background-color: #474747;
+        text-shadow: none;
+    }
+    
+    .image {
+        width: 100%;
+        height: auto;
+        padding: 4px 0;
+        margin: 0;
+        z-index: inherit;
+    }
+    
+    .image img {
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        filter: drop-shadow(0px 0px 20px #ffffff);
+        z-index: inherit;
+    }
+    
+    .container h2 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: .6px;
+        color:#141414cc;
+        padding: 0;
+        padding-top: 20px;
+        margin: 0;
+    }
+    
+    .attack {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: end;
+        border-top-right-radius: 6px;
+    }
+    
+    .attack h4 {
+        width: auto;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: .4px;
+        color: rgb(255, 77, 77);;
+        text-align: right;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0px 6px;
+        border-top-right-radius: 6px;
+        
+    }
+    
+    .type {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .type h3 {
+        width: auto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: .4px;
+        color: rgb(82, 82, 82);
+        background-color: rgb(255, 255, 255);
+        padding: 2px 5px;
+        margin: 0;
+        text-align: center;
+        border-bottom-left-radius: 6px;
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
 
 
 

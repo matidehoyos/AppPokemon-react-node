@@ -80,7 +80,6 @@ export default function Cards () {
               ))}
             </div>
           </div>
-            <div className={style.cajon}>
               <div className={style.cardsContainer}>
               {loading ? (
               <div className={style.loader}>
@@ -135,7 +134,6 @@ export default function Cards () {
                       </div>
                       )}
                   </div>
-              </div>
         </div>
         </div>
     )
