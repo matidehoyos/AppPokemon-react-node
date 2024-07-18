@@ -265,7 +265,7 @@
     width: auto;
     height: 400px;
     padding: 20px 0;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     border: none;
     margin-top: 0px;
     background-color: transparent;
@@ -413,6 +413,7 @@
         height: 30px;
         background: #222;
         padding: 10px 0px;
+        margin: 0;
         display: flex;
         justify-content: center;
         position: absolute;
