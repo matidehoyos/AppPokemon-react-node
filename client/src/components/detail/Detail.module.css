@@ -7,12 +7,12 @@
     align-items: center;
     background-color: rgb(227, 227, 227);
     margin: 0 auto;
+    padding-top: 140px;
 }
 
 .container h4{
     font-size: 32px;
     font-weight: 700;
-    margin-top: 140px;
     color: #474747;
 }
 
