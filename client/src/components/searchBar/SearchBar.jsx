@@ -10,7 +10,7 @@ export default function SearchBar() {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        dispatch(searchPokemon(input.toLocaleLowerCase()));
+        dispatch(searchPokemon(input.toLowerCase()));
         setInput("");
     }
     
