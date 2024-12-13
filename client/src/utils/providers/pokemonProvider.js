@@ -6,7 +6,7 @@ const pokemonProvider = {
     
     async getPokemones() {
         try {
-            const pokemones = await axios(`${URL_SERVER}/pokemons`)
+            const pokemones = await axios(`${URL_SERVER}/pokemons/`)
             return pokemones;
         } catch (error) {
             console.error(error.message)
