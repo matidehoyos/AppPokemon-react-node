@@ -18,3 +18,61 @@
     margin: 0;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 880px) {
+    .type {
+        width: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+    
+    .type h3 {
+        width: auto;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 12px;
+        letter-spacing: .4px;
+        color: #fff;
+        padding: 3px 4px;
+        margin: 0;
+        text-align: center;
+    }
+    
+}
+
+

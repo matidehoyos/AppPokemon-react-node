@@ -65,96 +65,60 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .container {
-        width: 120px;
+        width: 140px;
         height: auto;
-        background: rgb(255, 255, 153);  
-        border: .5px solid #a5a5a5;
+        background: #ffffff60;  
+        border: 0.5px solid #fff;
         margin: 0;
         padding: 0;
         border-radius: 4px;
         text-align: center;
-        transition: all .4s ease-out;
-        box-shadow: 0 0 20px #9b9b9b55;
         box-sizing: border-box;
-    
-    }
-    
-    .container:hover {
-        transform: scale(1.02);
-        z-index: 10;
-        box-shadow: 0px 0px 20px #232323;
-        background-color: rgb(255, 77, 77);
-    }
-    
-    .container:hover h2 {
-        color: #ffdcdc;
-        text-shadow: none;
-    }
-    
-    .container:hover h4 {
-        color: #f4f4f4;
-        text-shadow: none;
-        background-color: #474747;
-    }
-    
-    .container:hover h3 {
-        color: rgb(255, 255, 237);
-        background-color: #474747;
-        text-shadow: none;
-    }
-    
-    .image {
-        width: 100%;
-        height: auto;
-        padding: 4px 0;
-        margin: 0;
-        z-index: inherit;
-    }
-    
-    .image img {
-        width: 70%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        filter: drop-shadow(0px 0px 20px #f6ff00);
-        z-index: inherit;
+        overflow: hidden;
+        position: relative;
     }
     
     .container h2 {
-        font-size: 14px;
-        font-weight: 800;
-        line-height: 16px;
-        letter-spacing: .4px;
-        color:#141414cc;
-        padding: 0;
-        padding-top: 20px;
-        margin: 0;
-    }
-    
-    .attack {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: end;
-        border-top-right-radius: 6px;
-    }
-    
-    .attack h4 {
         width: auto;
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 600;
         letter-spacing: .4px;
-        color: rgb(255, 77, 77);;
-        text-align: right;
-        background-color: #ffffff;
+        color: #222;
+        padding: 0;
+        padding-left: 0;
+        padding-bottom: 22px;
         margin: 0;
-        padding: 0px 6px;
-        border-top-right-radius: 6px;
-        
+        text-align: center;
     }
+    
+    .container:hover {
+        box-shadow: 0px 0px 20px yellow;
+        background-color: #00000090;
+    }
+    
+    .container:hover h2 {
+        color: yellow;
+        text-align: center;
+        padding-left: 0;
+        position: relative;
+        top: 20px;
+        transform: scale(1.2);
+    }
+    
+    .container:hover img {
+        transform: scale(2);
+    }
+    
+    .container:hover h4 {
+        display: none;
+    }
+    
+    .container:hover h3 {
+        display: none;
+    }
+    
     
 }
 

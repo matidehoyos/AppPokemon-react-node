@@ -40,3 +40,99 @@
     color: #000;
     border-bottom: .5px solid #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .typesContainer {
+        width: auto;
+        height: auto;
+    }
+    
+    .types {
+        width: auto;
+        height: 100vh;
+        padding: 8px 20px;
+        padding-left: 5px;
+        padding-top: 138px;
+        margin: 0;
+        background-color: #ffff00;
+        z-index: 1000;
+        overflow-y: scroll;
+    }
+    
+    .types li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .types button {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 10px;
+        letter-spacing: .4px;
+        color: #222;
+        text-shadow: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 0;
+        text-align: left;
+        transition: all .6s ease;
+        border-bottom: .5px solid transparent;
+
+    }
+    
+    .types button:hover {
+        color: #222;
+        border-bottom: .5px solid transparent;
+    }
+    
+}

@@ -74,74 +74,61 @@
 
 @media (max-width: 600px) {
     .container {
-        width: 96%;
-        height: 60px;
+        width: 100vw;
+        height: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 4%;
-        padding-top: 0px;
-        margin: 0;
+        padding: 0;
         background-color: rgb(255, 77, 77);
+        border-radius: 0;
         position: fixed;
+        top: 0;
+        overflow: hidden;
+        z-index: 20000000;
     } 
     
     .logo1 {
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
         display: flex;
-    }
-    
-    .logo1 a {
-        margin: 0;
-        padding: 0;
+        background-color: Yellow;
+        margin-left: 10px;
     }
     
     .logo1 img {
-        width: 38%;
-        min-width: 70px;
+        width: 70px;
         height: auto;
-        object-fit: scale-down;
+        object-fit: cover;
+        margin: 0;
     }
     
     .menu { 
-        width: auto;
-        height: auto;
         display: flex;
         align-items: center;
-        padding: 0;
-        margin: 0;
+        margin-right: 5px;
     }
     
     .menu ul {
         list-style: none;
-        padding: 0;
     }
     
     .menu li {
         display: inline;
-        padding: 0;
+        background-color: transparent;
+        padding-right: 5px;
     }
     
     .menu li a {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 600;
         letter-spacing: .6px;
-        line-height: 16px;
         text-decoration: none;
-        text-shadow: none;
+        padding: 1px 6px;
         margin: 0;
-        margin-right: 15px;
-        color: rgb(255, 255, 123);
-        padding: 0;
-        transition: all .3s ease;
+        margin-left: 6px;
+        color: red;
+        border: 1px solid rgb(255, 77, 77);
+        background-color: yellow;
+        border-radius: 3px;
     }
-    
-    .menu a:hover {
-        color: rgb(223, 223, 0);
-    }
-
 }
 

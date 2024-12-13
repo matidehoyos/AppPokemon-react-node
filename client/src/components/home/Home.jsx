@@ -67,23 +67,22 @@ export default function Home() {
           ) : (
             <>
               {!loading && searchedPokemon && <SearchedCard pokemon={searchedPokemon} onBack={() => setSelectedPokemon(null)} />}
-              
-              {!loading && !searchedPokemon && currentPokemons
-                  .sort((a, b) => {
-                    if (orderBy === "name") {
-                      return a.name.localeCompare(b.name) * (sort === "asc" ? 1 : -1);
-                    } else if (orderBy === "attack") {
-                      return (a.attack - b.attack) * (sort === "asc" ? 1 : -1);
-                    }
-                  })
-                  .map((pokemon, index) => (
-                    <div key={index}>
-                      <Card 
-                        pokemon={pokemon} 
-                        onSelect={() => setSelectedPokemon(pokemon)} 
-                      />
-                    </div>
-                  ))}
+                {!loading && !searchedPokemon && currentPokemons
+                    .sort((a, b) => {
+                      if (orderBy === "name") {
+                        return a.name.localeCompare(b.name) * (sort === "asc" ? 1 : -1);
+                      } else if (orderBy === "attack") {
+                        return (a.attack - b.attack) * (sort === "asc" ? 1 : -1);
+                      }
+                    })
+                    .map((pokemon, index) => (
+                      <div key={index}>
+                        <Card 
+                          pokemon={pokemon} 
+                          onSelect={() => setSelectedPokemon(pokemon)} 
+                        />
+                      </div>
+                    ))}
 
               {!loading && currentPokemons.length === 0 && <NotPokemon />}
 

@@ -28,3 +28,44 @@
     100% { transform: translateX(0);}
 }
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 880px) {
+    .loader {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .loader h3 {
+        color: yellow;
+        font-size: 42px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        margin-top: 32px;
+        filter: drop-shadow(0px 0px 5px #000);
+    }
+    
+    .loader img {
+        transform: scale(1.2);
+        animation: runing 2s ease 1;
+        position: relative;
+    }
+    
+    @keyframes runing {
+        0% { transform: translateX(50vw); }
+        100% { transform: translateX(0);}
+    }
+}

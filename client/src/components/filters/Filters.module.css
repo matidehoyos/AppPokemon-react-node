@@ -165,14 +165,14 @@
     
     .container {
         width: 100%;
-        height: 120px;
+        height: auto;
         margin: 0;
-        padding: 10px 0;
+        padding: 8px 0;
         padding-bottom: 0px;
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 60px;
+        top: 55px;
         z-index: 1000;
     }
     
@@ -181,27 +181,20 @@
         display: flex;
         justify-content: space-between;
         padding: 0;
+        padding-bottom: 8px;
         margin: 0;
-        padding-bottom: 0px;
         z-index: 1000;
     }
     
     .box {
         width: auto;
-        margin-right: 25px;
+        margin-right: 20px;
         display: flex;
         flex-direction: column;
     }
     
     .container label {
-        width: auto;
-        font-size: 14px;
-        font-weight: 600;
-        color: rgb(255, 255, 255);
-        text-shadow: none;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 5px;
+        display: none;
     }
     
     .container select {
@@ -213,10 +206,10 @@
         padding: 2px;
         margin: 0;
         margin-left: 0px;
-        background: rgb(207, 207, 207);
+        background: transparent;
         border-radius: 4px;
         border: .5px solid #fff;
-        color: rgb(70, 70, 70);
+        color: #fff;
         cursor: pointer;
     }
     
