@@ -10,8 +10,10 @@
 
 .image img {
     width: auto;
+    max-width: 95px;
     height: auto;
     transform: scale(1.6);
+    border-radius: 50%;
 }
 
 .image::after {

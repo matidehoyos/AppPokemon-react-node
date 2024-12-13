@@ -32,23 +32,7 @@ const pokemonProvider = {
             console.error(error.message)
             return error.message
         }
-    },
-
-    async uploadImg(imgFile) {
-        try {
-            const url = `https://api.imgbb.com/1/upload?key=39742373eb01b1f677990f9eaf224ee2&name=${imgFile.name}`
-            const data = new FormData();
-            data.append("image", imgFile);
-            const upload = await fetch(url, {
-                method: "POST",
-                body: data
-            })
-            const responseData = await upload.json()
-            return responseData
-        } catch (error) {
-            return error.message
-        }
-    },
+    }
 }
 
 export default pokemonProvider;

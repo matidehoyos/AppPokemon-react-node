@@ -35,16 +35,18 @@ form {
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    background-color: rgba(255, 255, 0, 0.252);
+    gap: 5px 30px;
+    background-color: #00000060;
     backdrop-filter: blur(1px);
     border-radius: 12px;
     border: 1px solid #33333370;
 }
 
 .errors_danger {
-    font-size: 14px;
-    color: red;
+    width: auto;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 0, 0);
     text-align: left;
     padding: 6px;
 }

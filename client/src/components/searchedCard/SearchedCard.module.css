@@ -25,9 +25,11 @@
 
 .image img {
     width: auto;
+    max-width: 80px;
     transform: scale(2.6);
     object-fit: cover;
     filter: drop-shadow(0px 0px 40px yellow);
+    border-radius: 20px;
 }
 
 .txt {

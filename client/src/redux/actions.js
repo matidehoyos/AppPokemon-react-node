@@ -32,7 +32,7 @@ export const setTypes = (types) => {
 
 export const createPokemon = (formData) => async (dispatch) => {
     try {
-        const response = await axios.post(`https://pokemon-proyecto-production.up.railway.app/pokemons`, formData);
+        const response = await axios.post(`${URL_SERVER}/pokemons`, formData);
         dispatch({
             type: 'CREATE_POKEMON',
             payload: response.data, 
