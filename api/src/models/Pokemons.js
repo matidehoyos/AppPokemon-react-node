@@ -38,11 +38,6 @@ module.exports = (sequelize) => {
     weight: {
       type: DataTypes.INTEGER
     },
-    types: {
-      type: DataTypes.ARRAY(DataTypes.STRING),
-      allowNull: false,
-      defaultValue: [], 
-    },
   },
   { timestamps: false} 
   );

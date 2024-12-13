@@ -1,14 +1,14 @@
 const { Pokemons, Types } = require("../db");
 
 const postPokemons = async (req, res) => {
-    const {id,name,hp,attack,defense,speed,image,height,weight,types} = req.body;
+    const {name,hp,attack,defense,speed,image,height,weight,types} = req.body;
 
     try {
         
-        if(id,name,hp,attack,defense,speed,image,height,weight,types) {
+        if(name,hp,attack,defense,speed,image,height,weight,types) {
        
             const newPokemon = {
-                id,name,hp,attack,defense,speed,image,height,weight,types
+                name,hp,attack,defense,speed,image,height,weight
             }
     
             const createPokemon = await Pokemons.create(newPokemon);
