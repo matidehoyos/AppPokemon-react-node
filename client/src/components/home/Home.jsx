@@ -66,6 +66,7 @@ export default function Home() {
             />
           ) : (
             <>
+            <div className={style.cardsCointainer}>
               {!loading && searchedPokemon && <SearchedCard pokemon={searchedPokemon} onBack={() => setSelectedPokemon(null)} />}
                 {!loading && !searchedPokemon && currentPokemons
                     .sort((a, b) => {
@@ -83,7 +84,7 @@ export default function Home() {
                         />
                       </div>
                     ))}
-
+              </div>
               {!loading && currentPokemons.length === 0 && <NotPokemon />}
 
               {!searchedPokemon && !loading && currentPokemons.length > 0 && (
