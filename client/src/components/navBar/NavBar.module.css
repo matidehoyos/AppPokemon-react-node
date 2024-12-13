@@ -1,71 +1,54 @@
 .container {
-    width: 74%;
-    height: 60px;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
-    padding-top: 7px;
-    margin: 0 10%;
+    padding: 0 20px;
     background-color: rgb(255, 77, 77);
-    position: fixed;
-    z-index: 1000;
+    border-radius: 12px 12px 0 0;
 } 
 
 .logo1 {
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
     display: flex;
-}
-
-.logo1 a {
-    margin: 0;
-    padding: 0;
+    background-color: Yellow;
 }
 
 .logo1 img {
-    width: 38%;
+    width: 90px;
     height: auto;
-    object-fit: scale-down;
+    object-fit: cover;
+    margin: 0;
 }
 
 .menu { 
-    width: auto;
-    height: auto;
     display: flex;
     align-items: center;
-    padding: 0;
-    margin: 0;
 }
 
 .menu ul {
     list-style: none;
-    padding: 0;
 }
 
 .menu li {
     display: inline;
-    padding: 0;
+    background-color: yellow;
+    padding-right: 10px;
 }
 
 .menu li a {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: .6px;
-    line-height: 18px;
     text-decoration: none;
-    text-shadow: none;
     margin: 0;
-    margin-right: 20px;
-    color: rgb(255, 255, 123);
-    padding: 0;
+    margin-left: 15px;
+    color: red;
     transition: all .3s ease;
 }
 
 .menu a:hover {
-    color: rgb(223, 223, 0);
+    color: orange;
 }
 
 

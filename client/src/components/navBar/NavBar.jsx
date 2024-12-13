@@ -6,21 +6,19 @@ export default function NavBar() {
     
     return(
         <div className={style.container}>
-                         <div className={style.logo1}>
-                             <Link to="/home">
-                                   <img src="./logo-pokeapi.png" />
-                            </Link>
-                         </div>
-                    <div className={style.menu}>
-                        <ul>
-                            <li>
-                                <Link to="/home">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/create">Create</Link>
-                            </li>
-                        </ul>
-                    </div>
+                <Link to="/" className={style.logo1}>
+                    <img src="./logo-pokeapi.png" />
+                </Link>
+                <div className={style.menu}>
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/create">Create</Link>
+                        </li>
+                    </ul>
+                </div>
             </div>            
     )
 }

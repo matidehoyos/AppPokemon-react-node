@@ -1,43 +1,31 @@
-
 import './App.css'
-import Landing from './components/landing/Landing'
-import Home from './components/home/Home';
-import Detail from './components/detail/Detail';
-import Create from './components/create/Create';
 import { useEffect } from 'react';
-import axios from 'axios';
-import { useDispatch, useSelector } from 'react-redux';
-import { setTypes } from './redux/actions';
-import NavBar from './components/navBar/NavBar';
-import { Route, Routes, useLocation } from 'react-router-dom';
-
+import { Route, Routes } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setPokemons, setTypes } from './redux/actions';
+import pokemonProvider from './utils/providers/pokemonProvider';
+import Home from './components/home/Home';
+import Create from './components/create/Create';
 
 function App() {
   const dispatch = useDispatch();
-  const location = useLocation();
-  const createdPokemon = useSelector(state => state.createdPokemon);
+
+  const bringData = async () => {
+      const pokemones = await pokemonProvider.getPokemones();
+      dispatch(setPokemons(pokemones.data));
+      const types = await pokemonProvider.getTypes();
+      dispatch(setTypes(types.data))
+  }
 
   useEffect(() => {
-       axios("https://pokemon-proyecto-production.up.railway.app/pokemons/types")
-        .then(
-            ({data}) => {
-              dispatch(setTypes(data))
-            }
-        )
-  }, [createdPokemon]);
+      bringData() 
+  }, []);
 
   return (
-    <div>
-       { location.pathname !== '/' ? <NavBar /> : null }
+    <div className='container'>
       <Routes>
-        <Route path="/"
-               element={<Landing />}>
-        </Route>
-        <Route path='/home'
+        <Route path='/'
                element={<Home />}>
-        </Route>
-        <Route path='/detail/:id'
-               element={<Detail />}>
         </Route>
         <Route path='/create'
                element={<Create />}></Route>

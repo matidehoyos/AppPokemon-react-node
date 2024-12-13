@@ -1,0 +1,49 @@
+.pagination {
+    width: 100%;
+    height: auto;
+    background: #444;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000090;
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+}
+
+.pagination_span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .6px;
+    margin: 0px 20px;
+    color: #fff;
+}
+
+.boton:not(:disabled) {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background-color: rgb(70, 70, 255);
+    transition: all .6s ease;
+}
+
+.boton:not(:disabled):hover {
+    background-color: rgba(70, 70, 255,.6);
+}
+
+.boton:disabled {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    cursor: not-allowed;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background-color: rgba(70, 70, 255,.2);
+    transition: all .6s ease;
+}

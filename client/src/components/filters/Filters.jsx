@@ -14,11 +14,6 @@ const handleFilterOrigin = (event) => {
         dispatch(setOrigin(event.target.value));
 }
 
-const handleFilterTypes = (event) => {
-        event.preventDefault();
-        dispatch(setFilterType(event.target.value));
-}
-
 const handleOrderBy = (event) => {
         event.preventDefault();
         dispatch(setOrderBy(event.target.value));

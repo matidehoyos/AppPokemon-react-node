@@ -1,4 +1,6 @@
 import axios from "axios";
+const URL_SERVER = import.meta.env.VITE_URL_SERVER;
+
 
 
 export const setPokemons = (pokemons) => {
@@ -28,21 +30,30 @@ export const setTypes = (types) => {
     }
 }
 
-export const createPokemon = (formData) => async dispatch => {
+export const createPokemon = (formData) => async (dispatch) => {
     try {
-        const response = await axios.post("http://localhost:3002/pokemons", formData);
-        dispatch({ type: 'CREATE_POKEMON', payload: response.data });
-    } catch (error) {
+        const response = await axios.post(`https://pokemon-proyecto-production.up.railway.app/pokemons`, formData);
         dispatch({
-            type: 'ERROR_CREATED_POKEMON',
+            type: 'CREATE_POKEMON',
+            payload: response.data, 
+        });
+    } catch (error) {
+        console.log(error.message)
+        const status = error.response?.status || 500;
+        const details = error.response?.data?.error
+            ? `${error.response.data.error} error to create pokemon`
+            : "An unknown error occurred";
+        dispatch({
+            type: 'CREATE_POKEMON_ERROR',
             payload: {
-              status: error.response.status,
-              message: error.message,
-              details: error.response.data.error + " error to create pokemon",
+                status,
+                message: error.message,
+                details,
             },
-          });
-    } 
-}
+        });
+    }
+};
+
 
 export const resetCreatedPokemon = () => {
     return {

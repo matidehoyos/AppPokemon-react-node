@@ -1,108 +1,102 @@
 .container {
-    width: 80%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    background-color: rgb(227, 227, 227);
-    margin: 0 auto;
-    padding-top: 140px;
-}
-
-.container h4{
-    font-size: 32px;
-    font-weight: 700;
-    color: #474747;
+    width: 100%;
+    min-height: 70vh;
+    margin: 0;
+    padding-top: 70px;
+    background-color: transparent;
 }
 
 .card {
     width: auto;
     height: auto;
     padding: 0;
-    margin: 0px auto;
-    margin-top: 40px;
-    border-radius: 4px;
-    background: rgb(255, 255, 153);  
-    border: 2px solid #fff;
-    text-align: center;
+    margin: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.txt {
-    padding: 10px 80px;
-    border-left: 1px solid #fff;
-    background: rgb(255, 255, 153);  
-}
-
-.txt h2 {
-font-size: 24px;
-letter-spacing: .6px;
-color:#262626;
-padding: 0;
-margin: 0;
-margin-bottom: 20px;
 }
 
 .image {
     width: auto;
     height: auto;
-    padding: 0px 50px;
+    padding: 0;
+    margin: 0;
 }
 
 .image img {
-    width: 100%;
-    object-fit: scale-down;
-    transform: scale(1.4);
-    filter: drop-shadow(0px 0px 20px #ffffff);
+    width: auto;
+    transform: scale(2.6);
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 40px yellow);
 }
 
+.txt {
+    background: #ffffff90; 
+    border-radius: 12px; 
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.txt h2 {
+    font-size: 36px;
+    letter-spacing: .6px;
+    color:#111;
+    padding: 0 80px;
+    padding-right: 120px;
+    margin: 0;
+}
 
 .txt h4 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    letter-spacing: .6px;
-    color: rgb(52, 52, 52);
+    letter-spacing: .4px;
+    color: #111;
     padding: 0;
+    padding-left: 80px;
     margin: 0;
 } 
 
 .valores {
     color: rgb(196, 27, 27);
     font-size: 20px;
+    font-weight: 800;
 }
 
-.txt  h3 {
-    font-size: 18px;
+.typesContainer {
+    width: auto;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+}
+
+.types {
+    color: #111;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 26px;
-    letter-spacing: .6px;
-    color: rgb(76, 76, 255);
-    padding: 0;
+    padding: 2px 7px;
+    margin: 0;
+    margin-top: 5px;
 }
 
 .buttonClose {
-    width: auto;
-    height: auto;
-    text-align: right;
+    display: flex;
+    justify-content: end;
 }
+
 .close {
-    font-size: 16px;
-    font-weight: 700;
-    padding: 4px 6px;
-    color: rgb(197, 11, 11);
-	border: 1px solid rgb(197, 11, 11);
-	border-radius: 3px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 6px 12px;
     cursor: pointer;
-    text-align: right;
-    position: relative;
-    left: 68px;
-    background-color: transparent;
+    color: #fff;
+    background-color: red;
+	border: 1px solid #fff;
+    border-top: none;
+    border-right: none;
 }
 
 .close:hover {
-    background-color: #dfdfdf;
+    background-color: rgb(255, 100, 100);
 }
 
 

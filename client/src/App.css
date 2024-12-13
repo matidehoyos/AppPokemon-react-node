@@ -6,6 +6,21 @@
   background-image: url('../public/bg.jpeg');
   background-size: cover;
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.container {
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: dowing 2s 2s ease 1;
+  position: relative;
+}
+
+@keyframes dowing {
+  0% { transform: translateY(-50vw) }
+  100%{ transform: translateX(0)}
 }
 
 a {

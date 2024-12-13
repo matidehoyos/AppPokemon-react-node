@@ -8,7 +8,7 @@ const postPokemons = async (req, res) => {
         if(id,name,hp,attack,defense,speed,image,height,weight,types) {
        
             const newPokemon = {
-                id,name,hp,attack,defense,speed,image,height,weight
+                id,name,hp,attack,defense,speed,image,height,weight,types
             }
     
             const createPokemon = await Pokemons.create(newPokemon);

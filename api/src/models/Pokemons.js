@@ -6,8 +6,8 @@ module.exports = (sequelize) => {
   sequelize.define("pokemons", {
     id: {
       type: DataTypes.INTEGER,
+      autoIncrement: true,
       primaryKey: true,
-      allowNull: false,
     },
     name: {
       type: DataTypes.STRING,
@@ -37,7 +37,12 @@ module.exports = (sequelize) => {
     },
     weight: {
       type: DataTypes.INTEGER
-    }
+    },
+    types: {
+      type: DataTypes.ARRAY(DataTypes.STRING),
+      allowNull: false,
+      defaultValue: [], 
+    },
   },
   { timestamps: false} 
   );

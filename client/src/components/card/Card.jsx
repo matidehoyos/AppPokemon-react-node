@@ -1,24 +1,21 @@
-import { Link } from "react-router-dom";
 import style from "./Card.module.css";
+import TypeCard from "../typeCard/TypeCard";
+import Attack from "../attack/Attack";
+import PokemonImage from "../pokemonImage/PokemonImage";
 
 
-export default function ({pokemon}) {
+export default function ({pokemon, onSelect}) {
+    const name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1).toLowerCase();
+    
     return(
-
-        <Link to={`/detail/${pokemon.id}`}>
+        <div onClick={onSelect}>
              <div className={style.container}>
-                <div className={style.attack}>
-                     <h4>{pokemon.attack}</h4>
-                </div>
-                <h2>{pokemon.name?.toUpperCase()}</h2>
-                <div className={style.image}>
-                    <img src={pokemon.image}/>
-                </div>
-                <div className={style.type}>
-                    <h3>{pokemon.types?.join(" - ")?.toUpperCase()}</h3>
-                </div>
+                <TypeCard types={pokemon.types} />
+                <PokemonImage image={pokemon.image}/>
+                <h2>{name}</h2>
+                <Attack attack={pokemon.attack} />
             </div>
-        </Link>
+        </div>
             
     )
 }
