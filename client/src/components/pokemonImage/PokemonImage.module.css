@@ -35,25 +35,88 @@
 
 
 
+@media (max-width: 968px) {
+    
+    .image {
+        width: auto;
+        height: auto;
+        padding: 0;
+        padding-top: 58px;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .image img {
+        width: auto;
+        max-width: 95px;
+        height: auto;
+        transform: scale(1.4);
+        border-radius: 50%;
+    }
+    
+    .image::after {
+        content: ''; 
+        position: absolute;
+        top: 34px; 
+        left: 15px;
+        width: 100%; 
+        height: 78%; 
+        background: #ffffff90; 
+        z-index: -1; 
+        border-radius: 50%; 
+        border: .3px solid #fff;
+    }
+    
+}
 
 
 
 
 
 
+@media (min-width: 600px) and (max-width: 968px) {
+    .image {
+        width: auto;
+        height: auto;
+        padding: 0;
+        padding-top: 58px;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .image img {
+        transform: scale(1.2);
+    }
+    
+}
+
+
+
+@media (max-width: 734px) {
+    .image {
+        width: auto;
+        height: auto;
+        padding: 0;
+        padding-top: 48px;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .image img {
+        transform: scale(1);
+    }
+    
+}
 
 
 
 
 
 
-
-
-
-
-
-
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .image {
         width: auto;
         height: auto;
@@ -83,6 +146,53 @@
         z-index: -1; 
         border-radius: 50%; 
         border: .3px solid #fff;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 540px) {
+    .image {
+        width: auto;
+        height: auto;
+        padding: 0;
+        padding-top: 26px;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .image img {
+        width: auto;
+        max-width: 90px;
+        height: auto;
+        transform: scale(1.3);
+        border-radius: 50%;
+    }
+    
+    .image::after {
+        content: ''; 
+        position: absolute;
+        top: 45px; 
+        left: 0px;
+        width: 100%; 
+        height: 58%; 
+        background: #ffffff30; 
+        z-index: -1; 
+        border-radius: 50%; 
+        border: .3px solid #ffffff30;
     }
     
 }

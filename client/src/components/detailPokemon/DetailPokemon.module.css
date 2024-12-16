@@ -109,10 +109,10 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
 
     .container {
-        width: 82%;
+        width: auto;
         min-height: auto;
         margin: 0 auto;
         padding-top: 130px;
@@ -142,7 +142,7 @@
         max-width: 80px;
         transform: scale(2.6);
         object-fit: cover;
-        filter: drop-shadow(0px 0px 40px yellow);
+        filter: drop-shadow(0px 0px 10px yellow);
         border-radius: 20px;
     }
     
@@ -215,4 +215,42 @@
         background-color: rgb(255, 100, 100);
     }
     
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+    
+    .image img {
+        max-width: 90px;
+        transform: scale(2.1);
+    }
+    
+    .txt { 
+        border-radius: 6px; 
+    }
+    
+    .txt h2 {
+        font-size: 28px;
+        letter-spacing: .6px;
+        color:#111;
+        padding: 0 50px;
+        padding-right: 70px;
+        margin: 0;
+    }
+    
+    .txt h4 {
+        padding-left: 50px;
+    } 
+    
+    .typesContainer {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
 }

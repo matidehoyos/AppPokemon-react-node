@@ -53,6 +53,42 @@
 
 
 
+@media (min-width: 900px) and (max-width: 1200px) {
+    .types {
+        width: auto;
+        height: auto;
+        padding: 17px 20px;
+        margin: 0;
+        background-color: #ffff00;
+        z-index: 1000;
+    }
+
+    .types button {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 700px) and (max-width: 960px) {
+    .types {
+        width: auto;
+        height: auto;
+        padding: 14px 16px;
+        margin: 0;
+        background-color: #ffff00;
+        z-index: 1000;
+    }
+
+    .types button {
+        font-size: 15px;
+        line-height: 12px;
+    }
+}
 
 
 
@@ -87,7 +123,9 @@
 
 
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 700px) {
     .typesContainer {
         width: auto;
         max-height: 100vh;
@@ -98,7 +136,7 @@
         height: 100vh;
         padding: 8px 10px;
         margin: 0;
-        background-color: #fff;
+        background-color: #ffffff90;
         z-index: 1000;
         position: fixed !important;
         top: 130px;
@@ -134,4 +172,35 @@
         border-bottom: .5px solid transparent;
     }
     
+}
+
+
+
+
+
+
+
+@media (max-width: 540px) {
+    .typesContainer {
+        overflow-y: scroll;
+    }
+
+
+    .typesContainer::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .types {
+        padding: 10px;
+    }
+    
+    .types button {
+        color: #111;
+    }
+    
+    .types button:hover {
+        color: #111;
+        border-bottom: none;
+    }
+
 }

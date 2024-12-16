@@ -112,111 +112,152 @@
 
 
 
-    @media (max-width: 600px) {
+@media (max-width: 740px) {
 
-        .container {
-            width: 72%;
-            min-height: auto;
-            margin: 0 auto;
-            padding-top: 10px;
-            background-color: transparent;
-        }
-        
-        .card {
-            width: auto;
-            height: auto;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .image {
-            width: auto;
-            height: auto;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .image img {
-            width: auto;
-            max-width: 80px;
-            transform: scale(2.6);
-            object-fit: cover;
-            filter: drop-shadow(0px 0px 40px yellow);
-            border-radius: 20px;
-        }
-        
-        .txt {
-            background: #ffffff90; 
-            border-radius: 12px; 
-            border: 1px solid #fff;
-            overflow: hidden;
-        }
-        
-        .txt h2 {
-            font-size: 36px;
-            letter-spacing: .6px;
-            color:#111;
-            padding: 0 80px;
-            padding-right: 120px;
-            margin: 0;
-        }
-        
-        .txt h4 {
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: .4px;
-            color: #111;
-            padding: 0;
-            padding-left: 80px;
-            margin: 0;
-        } 
-        
-        .valores {
-            color: rgb(196, 27, 27);
-            font-size: 20px;
-            font-weight: 800;
-        }
-        
-        .typesContainer {
-            width: auto;
-            padding-left: 80px;
-            padding-right: 60px;
-            padding-bottom: 40px;
-        }
-        
-        .types {
-            color: #111;
-            font-size: 14px;
-            font-weight: 700;
-            padding: 2px 7px;
-            margin: 0;
-            margin-top: 5px;
-        }
-        
-        .buttonClose {
-            display: flex;
-            justify-content: end;
-        }
-        
-        .close {
-            font-size: 24px;
-            font-weight: 600;
-            padding: 6px 12px;
-            cursor: pointer;
-            color: #fff;
-            background-color: red;
-            border: 1px solid #fff;
-            border-top: none;
-            border-right: none;
-        }
-        
-        .close:hover {
-            background-color: rgb(255, 100, 100);
-        }
-        
+    .container {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 0;
     }
-   
+    
+    .card {
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image {
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .image img {
+        width: auto;
+        max-width: 80px;
+        transform: scale(2.6);
+        object-fit: cover;
+        filter: drop-shadow(0px 0px 24px yellow);
+        border-radius: 20px;
+    }
+    
+    .txt {
+        background: #ffffff90; 
+        border-radius: 12px; 
+        border: 1px solid #fff;
+        overflow: hidden;
+    }
+    
+    .txt h2 {
+        font-size: 36px;
+        letter-spacing: .6px;
+        color:#111;
+        padding: 0 80px;
+        padding-right: 120px;
+        margin: 0;
+    }
+    
+    .txt h4 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: .4px;
+        color: #111;
+        padding: 0;
+        padding-left: 80px;
+        margin: 0;
+    } 
+    
+    .valores {
+        color: rgb(196, 27, 27);
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .typesContainer {
+        width: auto;
+        padding-left: 80px;
+        padding-right: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .types {
+        color: #111;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 2px 7px;
+        margin: 0;
+        margin-top: 5px;
+    }
+    
+    .buttonClose {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .close {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 6px 12px;
+        cursor: pointer;
+        color: #fff;
+        background-color: red;
+        border: 1px solid #fff;
+        border-top: none;
+        border-right: none;
+    }
+    
+    .close:hover {
+        background-color: rgb(255, 100, 100);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+    
+    .image img {
+        max-width: 90px;
+        transform: scale(2.1);
+        filter: drop-shadow(0px 0px 10px yellow); 
+    }
+    
+    .txt { 
+        border-radius: 6px; 
+    }
+    
+    .txt h2 {
+        font-size: 28px;
+        letter-spacing: .6px;
+        color:#111;
+        padding: 0 50px;
+        padding-right: 70px;
+        margin: 0;
+    }
+    
+    .txt h4 {
+        padding-left: 50px;
+    } 
+    
+    .typesContainer {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}

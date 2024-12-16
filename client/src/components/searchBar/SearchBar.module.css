@@ -88,12 +88,85 @@
 
 
 
+@media (min-width: 700px) and (max-width: 860px) { 
+    .container label {
+        padding: 4px 6px;
+    }
+    
+    .input {
+        width: 110px;
+        height: auto;
+        font-size: 12px;
+        padding: 0;
+        color: #333;
+    }
+    
+    .input::placeholder {
+        font-size: 12px;
+        font-weight: 600;
+        color: #444;
+    }
+    
+    .input:focus {
+        border: none;
+        outline: none;
+    }
+    
+    .button {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        color: #333;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        transform: scale(1.2);
+    }
+    
+    .suggestions {
+        width: 180px;
+        max-height: 150px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background: red;
+        border: 1px solid yellow;
+        position: absolute;
+        top: 32px;
+        overflow-y: auto;
+        z-index: 100;
+        border-radius: 6px;
+    }
+    
+    .suggestions::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .suggestions li {
+        padding: 4px 8px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .suggestions li:hover {
+        background-color: yellow;
+        color: red;
+    }
+}
 
 
 
 
 
-@media (max-width: 880px) {
+
+
+
+
+@media (max-width: 700px) {
     
     .container {
         width: 100%;
@@ -102,8 +175,7 @@
         background-color: yellow;
         display: flex;
         justify-content: center;
-        padding: 0;
-        padding-top: 6px;
+        padding: 6px 0;
     }
     
     .container label {

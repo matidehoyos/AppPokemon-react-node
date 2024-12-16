@@ -64,8 +64,203 @@
 
 
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .container {
+        width: 220px;
+    } 
+}
 
-@media (max-width: 800px) {
+
+
+
+@media (min-width: 1070px) and (max-width: 1200px) {
+    .container {
+        width: 200px;
+    } 
+}
+
+
+
+
+@media (min-width: 968px) and (max-width: 1070px) {
+    .container {
+        width: 180px;
+    } 
+}
+
+
+
+
+
+
+@media (max-width: 968px) {
+    .container {
+        width: 160px;
+    } 
+
+    .container h2 {
+        font-size: 18px;
+        padding-left: 0px;
+        padding-bottom: 23px;
+        text-align: center;
+    }
+    
+    .container:hover h2 {
+        top: 10px;
+        transform: scale(1.05);
+    }
+
+    .container:hover img {
+        transform: scale(1.6);
+    }
+}
+
+
+
+
+
+
+@media (min-width: 822px) and (max-width: 885px) {
+    .container {
+        width: 150px;
+    } 
+
+    .container h2 {
+        font-size: 16px;
+        font-weight: 800;
+        padding-left: 0px;
+        padding-bottom: 23px;
+        text-align: center;
+    }
+    
+    .container:hover h2 {
+        top: 10px;
+        transform: scale(1.05);
+    }
+
+    .container:hover img {
+        transform: scale(1.4);
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 734px) and (max-width: 825px) {
+    .container {
+        width: 140px;
+    } 
+
+    .container h2 {
+        font-size: 16px;
+        font-weight: 800;
+        padding-left: 0px;
+        padding-bottom: 23px;
+        text-align: center;
+    }
+    
+    .container:hover h2 {
+        top: 10px;
+        transform: scale(1.05);
+    }
+
+    .container:hover img {
+        transform: scale(1.4);
+    }
+}
+
+
+
+
+
+
+@media (max-width: 734px) {
+    .container {
+        width: 124px;
+    } 
+
+    .container h2 {
+        font-size: 14px;
+        font-weight: 800;
+        padding-left: 0px;
+        padding-bottom: 23px;
+        text-align: center;
+    }
+    
+    .container:hover h2 {
+        top: 10px;
+        transform: scale(1.05);
+    }
+
+    .container:hover img {
+        transform: scale(1.4);
+    }
+}
+
+
+
+@media (min-width: 540px) and (max-width: 700px) {
+    .container {
+        width: 160px;
+    }
+}
+
+
+
+@media (min-width: 620px) and (max-width: 668px) {
+    .container {
+        width: 112px;
+    } 
+
+    .container h2 {
+        font-size: 14px;
+        font-weight: 800;
+        padding-left: 0px;
+        padding-bottom: 23px;
+        text-align: center;
+    }
+    
+    .container:hover h2 {
+        top: 10px;
+        transform: scale(1.05);
+    }
+
+    .container:hover img {
+        transform: scale(1.4);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
     .container {
         width: 130px;
         height: auto;
@@ -118,9 +313,40 @@
     .container:hover h3 {
         display: none;
     }
-    
-    
 }
+
+
+
+
+@media (max-width: 540px) {
+    .container {
+        width: 133px;
+        border: 0.5px solid #fff;
+        border-radius: 2px;
+    }
+    
+    .container:hover h2 {
+        color: yellow;
+        text-align: center;
+        padding-left: 0;
+        position: relative;
+        top: 20px;
+        transform: scale(1.2);
+    }
+    
+    .container:hover img {
+        transform: scale(1.5);
+    }
+    
+    .container:hover h4 {
+        display: none;
+    }
+    
+    .container:hover h3 {
+        display: none;
+    }
+}
+
 
 
 

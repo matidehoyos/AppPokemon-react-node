@@ -49,6 +49,36 @@
 
 
 
+@media (max-width: 1400px) {
+    .container {
+        width: 92%;
+    }
+}
+
+
+
+
+
+@media (max-width: 920px) {
+    .container {
+        width: 92%;
+        min-height: 80vh;
+        margin: 0;
+        padding: 0;
+        border-radius: 12px;
+        border: 3px solid #fff;
+        overflow: hidden;
+    }
+    
+    .cards {
+        padding-top: 14px;
+    }
+    
+    .cardsCointainer {
+        gap: 6px;
+    }
+
+}
 
 
 
@@ -59,19 +89,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 800px) {
+@media (max-width: 738px) {
     
     .container {
         width: 100%;
@@ -94,6 +112,7 @@
         background-color: #ffffff10;
         backdrop-filter: blur(12px);
         position: relative;
+        overflow: hidden;
     }
     
     .cards {
@@ -101,7 +120,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: start;
         align-content: center;
         padding: 0;
         padding-top: 0;
@@ -112,8 +131,8 @@
         flex-wrap: wrap;
         justify-content: end;
         gap: 6px;
-        padding-right: 10px;
-        padding-top: 140px;
+        padding-right: 8px;
+        padding-top: 10px;
         padding-bottom: 60px;
         overflow-y: scroll;
     }
@@ -121,6 +140,25 @@
 }
 
 
+
+
+
+@media (max-width: 700px) {
+    .cardsCointainer {
+        padding-top: 140px;
+        margin-left: 84px;
+    }
+}
+
+
+
+
+
+@media (max-width: 560px) {
+    .cardsCointainer {
+        padding-left: 0;
+    }
+}
 
 
 

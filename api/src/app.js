@@ -14,7 +14,7 @@ server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
-server.use((req, res, next) => {
+server.use((res, next) => {
   res.header('Access-Control-Allow-Origin', '*'); 
   res.header('Access-Control-Allow-Credentials', 'true');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
@@ -24,7 +24,7 @@ server.use((req, res, next) => {
 
 server.use('/pokemons', routes);
 
-server.use((err, req, res, next) => { 
+server.use((err, res) => { 
   const status = err.status || 500;
   const message = err.message || err;
   console.error(err);
