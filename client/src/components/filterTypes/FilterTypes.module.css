@@ -129,6 +129,11 @@
     .typesContainer {
         width: auto;
         max-height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .typesContainer::-webkit-scrollbar {
+        display: none;
     }
     
     .types {
@@ -140,6 +145,11 @@
         z-index: 1000;
         position: fixed !important;
         top: 130px;
+        overflow-y: scroll;
+    }
+
+    .types::-webkit-scrollbar {
+        display: none;
     }
     
     .types li {
