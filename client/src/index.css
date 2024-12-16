@@ -16,12 +16,13 @@ body {
   display: flex;
   place-items: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   color: rgb(255, 255, 87);
 }
 
 
 @media (max-width: 600px) {
+
   :root {
     color: rgb(255, 86, 86);
     background-color: rgb(255, 90, 90);

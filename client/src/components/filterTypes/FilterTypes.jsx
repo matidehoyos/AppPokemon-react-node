@@ -15,9 +15,9 @@ export default function FilterTypes() {
     return(
         <div className={style.types}>
             <button value="all" onClick={handleType}>All types</button>
-            {types.map(type => (
-            <li key={type.id} value={type.name}><button value={type.name} onClick={handleType}>{type.name}</button></li>
-            ))}
+                {types.map(type => (
+                <li key={type.id} value={type.name}><button value={type.name} onClick={handleType}>{type.name}</button></li>
+                ))}
         </div>
     )
 }

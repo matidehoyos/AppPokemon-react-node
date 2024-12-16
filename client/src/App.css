@@ -1,6 +1,6 @@
 #root {
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
   margin: 0;
   padding: 0;
   background-image: url('../public/bg.jpeg');
@@ -10,7 +10,7 @@
 }
 
 .container {
-  min-height: 100vh; 
+  max-height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;

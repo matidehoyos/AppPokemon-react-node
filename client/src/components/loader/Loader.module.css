@@ -89,15 +89,16 @@
     
     .loader h3 {
         color: yellow;
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 700;
         padding: 0;
         margin: 0;
-        margin-top: 32px;
+        margin-top: 16px;
         filter: drop-shadow(0px 0px 5px #000);
     }
     
     .loader img {
+        width: 120px;
         transform: scale(1);
         animation: runing 2s ease 1;
         position: relative;

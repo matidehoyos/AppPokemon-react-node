@@ -156,6 +156,7 @@
 
 @media (max-width: 560px) {
     .cardsCointainer {
+        padding-top: 143px;
         padding-left: 0;
     }
 }

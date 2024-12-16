@@ -193,14 +193,23 @@
         padding: 10px;
         max-height: calc(100vh - 130px);
         overflow-y: scroll;
+        background-color: #ccc;
     }
 
     .types::-webkit-scrollbar {
         display: none;
     }
 
+    .types li {
+        padding: 0;
+        margin: 0;
+        height: 20px;
+    }
+
     .types button {
         color: #111;
+        margin: 0;
+        padding: 0;
     }
     
     .types button:hover {
