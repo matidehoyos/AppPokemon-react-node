@@ -1,38 +1,43 @@
-import axios from "axios"
-const URL_SERVER = import.meta.env.VITE_URL_SERVER;
+import axios from "axios";
 
+const apiClient = axios.create({
+  baseURL: import.meta.env.VITE_URL_SERVER, 
+  timeout: 10000, 
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
 
 const pokemonProvider = {
-    
-    async getPokemones() {
-        try {
-            const pokemones = await axios(`${URL_SERVER}/pokemons/`)
-            return pokemones;
-        } catch (error) {
-            console.error(error.message)
-            return error.message
-        }
-    },
-
-    async getPokemonById(id) {
-        try {
-            const pokemon = await axios(`${URL_SERVER}/pokemons/${id}`)
-            return pokemon;
-        } catch (error) {
-            console.error(error.message)
-            return error.message
-        }
-    },
-
-    async getTypes() {
-        try {
-            const types = await axios(`${URL_SERVER}/pokemons/types`)
-            return types;
-        } catch (error) {
-            console.error(error.message)
-            return error.message
-        }
+  async getPokemones() {
+    try {
+      const { data } = await apiClient.get("/pokemons/");
+      return data; 
+    } catch (error) {
+      console.error("Error al obtener pokemones:", error.message);
+      throw new Error(error.response?.data?.message || "Error al obtener pokemones");
     }
-}
+  },
+
+  async getPokemonById(id) {
+    try {
+      const { data } = await apiClient.get(`/pokemons/${id}`);
+      return data;
+    } catch (error) {
+      console.error(`Error al obtener el Pokémon con ID ${id}:`, error.message);
+      throw new Error(error.response?.data?.message || `Error al obtener el Pokémon con ID ${id}`);
+    }
+  },
+
+  async getTypes() {
+    try {
+      const { data } = await apiClient.get("/pokemons/types");
+      return data;
+    } catch (error) {
+      console.error("Error al obtener los tipos de Pokémon:", error.message);
+      throw new Error(error.response?.data?.message || "Error al obtener los tipos de Pokémon");
+    }
+  },
+};
 
 export default pokemonProvider;
