@@ -135,7 +135,7 @@ export default function Create() {
               {errors.speed && (<span className={style.errors_danger}>{errors.speed}</span>  )}        
             </div>
             <div className={style.box}>
-              <div>
+              <div className={style.typesDiv}>
                 <label>Types:</label>
                 <select onChange={handleTypeChange}>
                   <option value="0">Select</option>

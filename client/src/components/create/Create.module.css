@@ -5,9 +5,9 @@
     flex-direction: column;
     justify-content: start;
     text-align: center;
-    background-color: #ffffff90;
+    background-color: #ffffff10;
     backdrop-filter: blur(5px);
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -16,16 +16,18 @@
     width: auto;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 0;
     overflow: hidden;
 }
 
 .container h2 {
+    width: 340px;
     font-size: 24px;
     font-weight: 700;
     padding: 0;
-    margin: 0;
-    color: #222;
+    margin: 0 auto;
+    color: red;
+    background-color: yellow;
 }
 
 form {
@@ -36,19 +38,18 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 5px 30px;
-    background-color: #00000060;
+    background-color: rgb(255, 255, 136);
     backdrop-filter: blur(1px);
-    border-radius: 12px;
-    border: 1px solid #33333370;
+    border: 1px solid #fff;
 }
 
 .errors_danger {
     width: auto;
-    font-size: 15px;
-    font-weight: 400;
-    color: rgb(255, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(218, 0, 0);
     text-align: left;
-    padding: 6px;
+    padding: 2px 6px;
 }
 
 .box {
@@ -64,8 +65,8 @@ input {
     height: auto;
     margin: 0px;
     padding: 5px 8px;
-    background-color: #ffffff95;
-    border: 1px solid #fff;
+    background-color: #fff;
+    border: 1px solid #aaa;
     border-radius: 4px;
     display: inline;
     color: #222;
@@ -74,7 +75,7 @@ input {
 }
 
 input::placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: #111;
 }
@@ -110,7 +111,7 @@ input[type="range"]{
     background-repeat:no-repeat;
     overflow:hidden;
     outline: none;
-    border: 1px solid #fff;
+    border: 1px solid #aaa;
     cursor: pointer;
   }
     
@@ -136,13 +137,13 @@ input[type="range"]{
 select {
     width: 205px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     margin-left: 10px;
     padding: 6px 8px;
     border-radius: 4px;
-    border: .5px solid #333;
-    background: transparent;
+    border: .5px solid #aaa;
+    background: #fff;
     cursor: pointer;
     color: #111;
 }
@@ -163,11 +164,10 @@ select option {
     width: 260px;
     height: auto;
     background: red;
-    border: 1px solid #fff;
+    border: 1px solid yellow;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
-    text-shadow: 1px 1px 1px #333;
+    color: yellow;
     cursor: pointer;
     margin: 0;
     padding: 7px 0;
@@ -195,7 +195,93 @@ select option {
 
 
 
-@media (max-width: 600px) {
+
+
+
+
+
+
+@media (max-width: 1400px) {
+    .container {
+        width: 92%;
+    }
+    
+    .container h2 {
+        width: 320px;
+        font-size: 22px;
+    }
+    
+    form {
+        width: 60%;
+        height: auto;
+        padding: 20px 60px;
+        margin: 30px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px 30px;
+        background-color: rgb(255, 255, 136);
+        backdrop-filter: blur(1px);
+        border: 1px solid #fff;
+    }
+    
+}
+
+
+
+
+@media (max-width: 1000px) {
+    form {
+        width: 70%;
+        padding: 20px 30px;
+        margin: 30px auto;
+        justify-content: center;
+        gap: 5px 20px;
+    }
+}
+
+
+
+@media (max-width: 840px) {
+    form {
+        width: 90%;
+        padding: 20px;
+        margin: 30px auto;
+        justify-content: center;
+        gap: 5px 15px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .container {
+        padding-top: 45px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+        margin: 30px auto;
+        justify-content: center;
+        gap: 5px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
 
     .container {
         width: 100%;
@@ -204,19 +290,19 @@ select option {
         flex-direction: column;
         align-content: center;
         text-align: center;
-        background-color: rgb(255, 255, 139);
         margin: 0;
-        padding-top: 100px;
+        padding-top: 45px;
+        border: none;
+        border-radius: 0;
     }
     
-    .createTitle h2 {
-        font-size: 16px;
+    .subcontainer h2 {
+        width: 260px;
+        font-size: 18px;
         font-weight: 700;
         padding: 0;
-        margin: 0;
-        color: #333;
+        margin: 0 auto;
         letter-spacing: .4px;
-        padding-top: 0;
     }
     
     .succes {
@@ -224,77 +310,47 @@ select option {
     }
     
     form {
-        width: 80%;
+        width: 88%;
         height: auto;
-        padding: 20px 10px;
+        padding: 25px 10px;
         margin: 0px auto;
         margin-top: 20px;
-        background: rgba(0, 0, 0, .2);
         display: flex;
         flex-direction: column;
-    
+        justify-content: center;
+        overflow: hidden;
+        background-color: #ffffff90;
+        backdrop-filter: blur(10px);
     }
-    
-    .formLeft {
-        padding-right: 0px;
-    }
-    
-    .formRight {
-        padding-left: 0;
-    }
-    
+
     .box {
-        width: auto;
+        width: 96%;
         height: auto;
         display: flex;
         flex-direction: column;
+        align-items: start;
+        justify-content: center;
     }
     
-    .errors {
-        font-size: 16px;
-        font-weight: 400;
-        color: rgb(255, 35, 35);
-        text-align: left;
-        padding-left: 60px;
-        margin-bottom: 20px;
+    .errors_danger {
+        font-size: 14px;
     }
     
-    .inputDiv {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0;
-    }
     
     label {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
-        margin-right: 8px;
+        margin-right: 5px;
         display: inline;
-        color: #111;
+        color: #333;
     }
     
     input {
         width: 100%;
-        height: auto;
-        margin: 0px;
-        padding: 8px 5px;
-        background-color: #e6e6e6b9;
-        border: .5px solid #111;
-        border-radius: 5px;
-        display: inline;
-        color: #111;
-        font-size: 16px;
-        font-weight: 600;
     }
-    
+
     input::placeholder {
         font-size: 14px;
-        font-weight: 400;
-        color: #222;
     }
     
     .rangeDiv {
@@ -303,15 +359,17 @@ select option {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         margin: 0;
+        margin-bottom: 8px;
+        overflow: hidden;
     }
     
     input[type="range"]{
         appearance:none;
-        width: 300px;
+        width: 100%;
         height: auto;
-        padding: 7px 0px;
+        padding: 5px 0px;
         margin: 0px;
         background: linear-gradient(to right, #0c92ff 0%, #0078d7 50%, #004985 100%);
         background-size:90% 10px;
@@ -322,26 +380,11 @@ select option {
         border: .5px solid #222;
         cursor: pointer;
       }
-        
-      input[type="range"]::-webkit-slider-thumb{
-        appearance:none;
-        width:20px;
-        height:20px;
-        background: linear-gradient(to right, hwb(0 100% 0%) 0%, #004985 80%);
-        border-radius: 50%;
-        position:relative;
-        border: solid 1px;
-        z-index:3;
-        box-shadow:0 0 2px 0 rgba(0,0,0,0.3);
-      }
-    
-    .typesDiv {
+
+      .typesDiv {
         width: 100%;
-        height: auto;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+      }
     
     select {
         width: 100%;
@@ -351,9 +394,7 @@ select option {
         margin-left: 10px;
         padding: 8px 5px;
         border-radius: 6px;
-        border: .5px solid #fff;
-        background: #c0c0c0;
-        cursor: pointer;
+        border: .5px solid #aaa;
         color: #111;
     }
     
@@ -365,21 +406,9 @@ select option {
         background-color: #dcdcdc; 
       }
       
-    input[type="submit"]{
-        background: #004985;
-        border: none;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: .6px;
-        color: #fff;
-        text-shadow: none;
-        cursor: pointer;
-        margin: 20px auto;
-    }
-    
-    input[type="submit"]:hover {
-        background: #002c51;
-    }
-
+   
+      .BotonContainer {
+        margin-top: 20px;
+      }
 
 }
