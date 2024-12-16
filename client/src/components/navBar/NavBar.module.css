@@ -75,7 +75,7 @@
 @media (max-width: 700px) {
     .container {
         width: 100%;
-        height: auto;
+        height: 35px;
         display: flex;
         justify-content: space-between;
         align-items: center;

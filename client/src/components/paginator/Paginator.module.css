@@ -3,10 +3,11 @@
     height: auto;
     background: #444;
     padding: 10px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00000090;
+    background-color: #292929;
     position: absolute;
     bottom: 0;
     z-index: -10;
@@ -72,13 +73,12 @@
     .pagination {
         width: 100%;
         height: auto;
-        background: #444;
+        background: #333;
         padding: 8px 0;
         padding-left: 42px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #00000090;
         position: absolute;
         bottom: 0;
         backdrop-filter: blur(20px);

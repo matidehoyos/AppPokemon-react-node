@@ -11,6 +11,7 @@ export default function SearchBar() {
     const [suggestions, setSuggestions] = useState([]);
     const pokemons = useSelector((state) => state.pokemons); 
     const dispatch = useDispatch();
+    const [abierto, setAbierto] = useState(false)
 
     const handleInputChange = (e) => {
         const value = e.target.value.toLowerCase();
@@ -37,23 +38,31 @@ export default function SearchBar() {
         dispatch(searchPokemon(input.toLowerCase()));
         setInput("");
         setSuggestions([]);
+        setAbierto(false)
     };
+
+    const handleOpen = () => {
+        setAbierto(true)
+    }
 
     return (
         <div className={style.container}>
-            <label>
-                <input 
-                    name="search" 
-                    type="text" 
-                    value={input}
-                    onChange={handleInputChange} 
-                    placeholder="Search Pokemon..." 
-                    className={style.input}
-                />
-                <button className={style.button} onClick={handleSearch}>
-                    <FaSearch />
-                </button>
-            </label>
+            <button className={style.open} onClick={handleOpen}><FaSearch /></button>
+            <div className={style.caja} style={{right: abierto ? '0' : '-1000px' }}>
+                <label >
+                    <input 
+                        name="search" 
+                        type="text" 
+                        value={input}
+                        onChange={handleInputChange} 
+                        placeholder="Search Pokemon..." 
+                        className={style.input}
+                    />
+                    <button className={style.button} onClick={handleSearch}>
+                        <FaSearch />
+                    </button>
+                </label>
+            </div>
             {suggestions.length > 0 && (
                 <ul className={style.suggestions}>
                     {suggestions.map((pokemon) => (

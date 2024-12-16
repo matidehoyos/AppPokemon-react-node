@@ -75,7 +75,7 @@
 
 
 
-@media (min-width: 600px) and (max-width: 860px) {    
+@media (max-width: 860px) {    
     .container {
         padding: 10px 20px;
     }
@@ -116,41 +116,35 @@
 
 
 
-
-
-
-
-
 @media (max-width: 700px) {
     
     .container {
         width: 100%;
-        height: auto;
+        height: 45px;
         margin: 0;
-        padding: 8px 0;
-        padding-bottom: 0px;
+        padding: 0;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         position: fixed;
-        top: 55px;
+        top: 35px;
         z-index: 1000;
+        overflow: hidden;
     }
     
     .filters {
         width: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         padding: 0;
-        padding-bottom: 8px;
+        padding-left: 10px;
         margin: 0;
         z-index: 1000;
     }
     
     .box {
         width: auto;
-        margin-right: 20px;
-        display: flex;
-        flex-direction: column;
+        margin-right: 8px;
     }
     
     .container label {
@@ -160,17 +154,15 @@
     .container select {
         width: 90px;
         height: auto;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
         letter-spacing: .6px;
-        padding: 2px;
+        padding: 5px;
         margin: 0;
-        margin-left: 0px;
         background: transparent;
-        border-radius: 4px;
+        border-radius: 2px;
         border: .5px solid #fff;
         color: #fff;
-        cursor: pointer;
     }
     
     .container select:focus {

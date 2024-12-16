@@ -133,7 +133,7 @@
         gap: 6px;
         padding-right: 8px;
         padding-top: 10px;
-        padding-bottom: 60px;
+        padding-bottom: 80px;
         overflow-y: scroll;
     }
     
@@ -147,9 +147,9 @@
     .container {
         border-radius: 0;
     }
-    
+
     .cardsCointainer {
-        padding-top: 140px;
+        padding-top: 80px;
         margin-left: 84px;
     }
 }
@@ -160,7 +160,7 @@
 
 @media (max-width: 560px) {
     .cardsCointainer {
-        padding-top: 143px;
+        padding-top: 88px;
         padding-left: 0;
     }
 }
