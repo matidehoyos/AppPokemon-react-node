@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cors = require('cors'); 
 const routes = require('./routes/index.js');
-require('dotenv').config();
 require('./db.js');
 
 const server = express();
@@ -16,21 +15,10 @@ server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
 
-const allowedOrigins = [
-  process.env.URL_UNO,
-  process.env.URL_DOS,
-  process.env.URL_TRES,
-];
 
 server.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 }));
 
 server.use('/pokemons', routes);
