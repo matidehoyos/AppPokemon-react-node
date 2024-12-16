@@ -145,13 +145,7 @@
         z-index: 1000;
         position: fixed !important;
         top: 130px;
-        overflow-y: scroll;
     }
-
-    .types::-webkit-scrollbar {
-        display: none;
-    }
-    
     .types li {
         list-style-type: none;
         padding: 0;
@@ -192,18 +186,19 @@
 
 @media (max-width: 540px) {
     .typesContainer {
-        overflow-y: scroll;
-    }
-
-
-    .typesContainer::-webkit-scrollbar {
-        display: none;
+        overflow: hidden;
     }
     
     .types {
         padding: 10px;
+        max-height: calc(100vh - 130px);
+        overflow-y: scroll;
     }
-    
+
+    .types::-webkit-scrollbar {
+        display: none;
+    }
+
     .types button {
         color: #111;
     }

@@ -199,21 +199,6 @@
         justify-content: end;
     }
     
-    .close {
-        font-size: 24px;
-        font-weight: 600;
-        padding: 6px 12px;
-        cursor: pointer;
-        color: #fff;
-        background-color: red;
-        border: 1px solid #fff;
-        border-top: none;
-        border-right: none;
-    }
-    
-    .close:hover {
-        background-color: rgb(255, 100, 100);
-    }
     
 }
 
@@ -227,13 +212,20 @@
 
 @media (max-width: 560px) {
     
+    .container {
+        padding-top: 110px;
+        position: relative;
+        overflow: hidden;
+    }
+    
     .image img {
         max-width: 90px;
-        transform: scale(2.1);
+        transform: scale(1.8);
     }
     
     .txt { 
         border-radius: 6px; 
+        padding-top: 0;
     }
     
     .txt h2 {
@@ -252,5 +244,18 @@
     .typesContainer {
         padding-right: 50px;
         padding-left: 50px;
+        padding-bottom: 10px;
+    }
+    
+    .buttonClose {
+        position: absolute;
+        right: 0;
+    }
+
+    .close {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 4px 8px;
+        cursor: pointer;
     }
 }
